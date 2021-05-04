@@ -1,0 +1,10 @@
+.logout {
+  color: red;
+}
+
+.sell {
+  border-color: hsl(160, 78%, 42%);
+  border-radius: 10px;
+  border-width: 0.5em;
+  background-color: whitesmoke;
+}

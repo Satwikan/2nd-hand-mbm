@@ -1,37 +1,46 @@
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
-// import './Header.css'
-import { Button ,Navbar,Nav,Form,FormControl, NavDropdown} from 'react-bootstrap';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import './Header.css'
+import {
+  Button,
+  Navbar,
+  Nav,
+  Form,
+  FormControl,
+  NavDropdown,
+} from "react-bootstrap";
 
-class Header extends React.Component
-{
-  render()
-  {
+class Header extends React.Component {
+  render() {
     return (
-      <Navbar bg="light" expand="lg" >
-      <Navbar.Brand href="#home">2nd-hand-mbm</Navbar.Brand>
-      <Navbar.Toggle aria-controls="basic-navbar-nav" />
-      <Navbar.Collapse id="basic-navbar-nav">
-        <Nav className="mr-auto">
-        <Form inline>
-          <FormControl type="text" placeholder="Search" className="mr-sm-2" />
-          <Button variant="outline-success">Search</Button>
-        </Form>
-        </Nav>
-        
+      <Navbar bg="light" expand="lg">
+        <Navbar.Brand href="#home">2nd-Hand-MBM</Navbar.Brand>
+        <Navbar.Toggle aria-controls="basic-navbar-nav" />
+        <Navbar.Collapse id="basic-navbar-nav">
+          <Nav className="mx-auto">
+            <Form inline>
+              <FormControl
+                type="text"
+                placeholder="Search"
+                className="search-bar mx-auto"
+                style={{width: '500px'}}
+              />
+              {/* <Button variant="outline-success">Search</Button> */}
+            </Form>
+          </Nav>
 
-        
-          <Nav.Link href="#link">Sell</Nav.Link>
-          <NavDropdown title="Dropdown" id="basic-nav-dropdown">
-            <NavDropdown.Item href="#action/3.1">Action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.2">Another action</NavDropdown.Item>
-            <NavDropdown.Item href="#action/3.3">Something</NavDropdown.Item>
+          <Button href="#link" className='sell'>+ SELL</Button>
+          <NavDropdown title="User-Name" id="basic-nav-dropdown">
+            <NavDropdown.Item href="#action/3.1">My Ads</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.2">Profile</NavDropdown.Item>
             <NavDropdown.Divider />
-            <NavDropdown.Item href="#action/3.4">Separated link</NavDropdown.Item>
+            <NavDropdown.Item href="#action/3.4" className="logout" style={{color:'red'}}>
+              <b>Logout</b>
+            </NavDropdown.Item>
           </NavDropdown>
-      </Navbar.Collapse>
-    </Navbar>
-    )
+        </Navbar.Collapse>
+      </Navbar>
+    );
   }
 }
 export default Header;
