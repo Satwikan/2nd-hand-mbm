@@ -6,15 +6,55 @@ import 'mdbreact/dist/css/mdb.css';
 
 import Header from './Header'; //Include Heder
 import Footer from './Footer'; //Include Footer
- 
+import {Row, Col, Container} from "react-bootstrap";
+ import Card from './Card'
+import Banner from './Banner';
 class App extends React.Component {
   
   render() {
     return (
       
     
-     <div className="maincontainer">
-      <Header></Header>
+     <div className="App
+     ">
+      <Header/>
+      <br/>
+      <br/>
+      <Banner/>
+      <br/>
+      <br/>
+      <br/>
+    
+     <Container>
+  <Row>
+    <Col>
+      <Card/>
+    </Col>
+    <Col>
+    <Card/>
+    </Col>
+    <Col>
+    <Card/>
+    </Col>
+  </Row>
+</Container>
+      <br/>
+      <br/>
+      <Container>
+  <Row>
+    <Col>
+      <Card/>
+    </Col>
+    <Col>
+    <Card/>
+    </Col>
+    <Col>
+    <Card/>
+    </Col>
+  </Row>
+</Container>
+      
+      <br/>
       <Footer/>
  
       
