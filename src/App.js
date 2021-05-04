@@ -51,9 +51,14 @@ class App extends React.Component {
             </Col>
           </Row>
         </Container>
-
         <br />
+        <br />
+    
         <Footer />
+  
+    
+
+
       </div>
     );
   }
