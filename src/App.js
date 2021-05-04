@@ -6,6 +6,7 @@ import 'mdbreact/dist/css/mdb.css';
 
 import Header from './Header'; //Include Heder
 import Footer from './Footer'; //Include Footer
+import Card from './Card';
  
 class App extends React.Component {
   
@@ -14,7 +15,8 @@ class App extends React.Component {
       
     
      <div className="maincontainer">
-      <Header></Header>
+      <Header/>
+      <Card/>
       <Footer/>
  
       
