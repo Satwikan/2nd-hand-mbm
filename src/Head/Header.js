@@ -9,12 +9,13 @@ import {
   FormControl,
   NavDropdown,
 } from "react-bootstrap";
+import history from "../history";
 
 class Header extends React.Component {
   render() {
     return (
       <Navbar bg="light" expand="lg">
-        <Navbar.Brand href="#home">2nd-Hand-MBM</Navbar.Brand>
+        <Navbar.Brand onClick={() => history.push('/')}>2nd-Hand-MBM</Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="mx-auto">
@@ -29,7 +30,7 @@ class Header extends React.Component {
             </Form>
           </Nav>
 
-          <Button href="#link" className='sell'>+ SELL</Button>
+          <Button onClick={() => history.push('/Sell')} className='sell'>+ SELL</Button>
           <NavDropdown title="User-Name" id="basic-nav-dropdown">
             <NavDropdown.Item href="#action/3.1">My Ads</NavDropdown.Item>
             <NavDropdown.Item href="#action/3.2">Profile</NavDropdown.Item>

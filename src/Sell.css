@@ -1,0 +1,10 @@
+
+
+#container{
+	display: grid;
+    place-items: center;
+}
+
+#form{
+    max-width: fit-content;
+}
