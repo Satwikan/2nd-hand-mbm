@@ -2,7 +2,7 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form, Row, Col } from "react-bootstrap";
 import "./Sell.css";
-import axios from 'axios'
+import axios from "axios";
 
 const Sell = () => {
   const onFormSubmit = (e) => {
@@ -10,11 +10,12 @@ const Sell = () => {
     const formData = new FormData(e.target),
       formDataObj = Object.fromEntries(formData.entries());
     console.log(formDataObj);
-    axios.post('http://localhost:5000/post', formDataObj)
-    .then(function (response) {
-      console.log(response);
-    })
-    .catch(err => console.log(err))
+    axios
+      .post("http://localhost:5000/post", formDataObj)
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch((err) => console.log(err));
   };
   return (
     <div id="container">
@@ -22,8 +23,12 @@ const Sell = () => {
         <h1> Seller Page </h1>
         <br />
         <Form.Label>Add Title</Form.Label>
-        <Form.Control type="text" placeholder="Text" name="title" />
-        <Form.Control type="text" placeholder="Text" required="true"/>
+        <Form.Control
+          type="text"
+          placeholder="Text"
+          name="title"
+          required="true"
+        />
         <Form.Text className="text-muted">
           Mention the key features of your item(e.g brand,model,age type)
         </Form.Text>
@@ -31,8 +36,12 @@ const Sell = () => {
 
         <Form.Group>
           <Form.Label>Description</Form.Label>
-          <Form.Control as="textarea" rows={5}  name="description"/>
-          <Form.Control as="textarea" rows={5} required="true"/>
+          <Form.Control
+            as="textarea"
+            rows={5}
+            name="description"
+            required="true"
+          />
         </Form.Group>
         <Form.Text className="text-muted">
           Include condition , features, and reason for selling
@@ -45,15 +54,23 @@ const Sell = () => {
             Price (₹)
           </Form.Label>
           <Col sm="5">
-            <Form.Control type="text" placeholder="Set a Price" name="price"/>
-            <Form.Control type="number" placeholder="Set a Price" required="true" />
+            <Form.Control
+              type="number"
+              placeholder="Set a Price"
+              name="price"
+              required="true"
+            />
           </Col>
         </Form.Group>
         <hr size="8" width="100%" color="black" />
 
         <Form.Group>
-          <Form.File id="exampleFormControlFile1" label="Upload Image" name='image'/>
-          <Form.File id="exampleFormControlFile1" label="Upload Image" required="true" />
+          <Form.File
+            id="exampleFormControlFile1"
+            label="Upload Image"
+            name="image"
+            required="true"
+          />
         </Form.Group>
         <br />
 
