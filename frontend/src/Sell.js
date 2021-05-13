@@ -16,7 +16,7 @@ const Sell = () => {
         console.log(response);
       })
       .catch((err) => console.log(err));
-      alert('Form is Submitted Successfully');
+      alert('We got your Submission! 😁');
   };
   
   return (
