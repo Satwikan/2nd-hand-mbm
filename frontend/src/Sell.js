@@ -16,7 +16,9 @@ const Sell = () => {
         console.log(response);
       })
       .catch((err) => console.log(err));
+      alert('Form is Submitted Successfully');
   };
+  
   return (
     <div id="container">
       <Form id="form" onSubmit={onFormSubmit}>
