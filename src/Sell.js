@@ -11,7 +11,7 @@ class Sell extends React.Component {
         <h1> Seller Page </h1>
         <br />
         <Form.Label>Add Title</Form.Label>
-        <Form.Control type="text" placeholder="Text" />
+        <Form.Control type="text" placeholder="Text" required="true"/>
         <Form.Text className="text-muted">
           Mention the key features of your item(e.g brand,model,age type)
         </Form.Text>
@@ -19,7 +19,7 @@ class Sell extends React.Component {
 
         <Form.Group controlId="exampleForm.ControlTextarea1">
           <Form.Label>Description</Form.Label>
-          <Form.Control as="textarea" rows={5} />
+          <Form.Control as="textarea" rows={5} required="true"/>
         </Form.Group>
         <Form.Text className="text-muted">
           Include condition , features, and reason for selling
@@ -32,13 +32,13 @@ class Sell extends React.Component {
             Price (₹)
           </Form.Label>
           <Col sm="5">
-            <Form.Control type="text" placeholder="Set a Price" />
+            <Form.Control type="number" placeholder="Set a Price" required="true" />
           </Col>
         </Form.Group>
         <hr size="8" width="100%" color="black" />
 
         <Form.Group>
-          <Form.File id="exampleFormControlFile1" label="Upload Image" />
+          <Form.File id="exampleFormControlFile1" label="Upload Image" required="true" />
         </Form.Group>
         <br />
 
