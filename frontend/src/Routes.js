@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { Router, Switch, Route } from "react-router-dom";
-import Sell from "./Sell";
+import Sell from "./AdPostingForm/Sell";
 import history from "./history";
 import Home from "./Home/Home";
 
