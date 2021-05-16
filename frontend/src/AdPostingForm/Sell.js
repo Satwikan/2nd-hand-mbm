@@ -3,6 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form, Row, Col } from "react-bootstrap";
 import "./Sell.css";
 import axios from "axios";
+document.body.style = 'background: #E0FFFF;';
 
 const Sell = () => {
   const onFormSubmit = (e) => {
@@ -20,7 +21,9 @@ const Sell = () => {
   };
   
   return (
-    <div id="container">
+    <div id="container" style={{ 
+      backgroundImage: `url("https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/06/BUILD-GREAT-CORPORATE-DESIGN.jpg?auto=format&q=60&w=1600&h=1000&fit=crop&crop=faces")` 
+    }}>
       <Form id="form" onSubmit={onFormSubmit}>
         <h1> Seller Page </h1>
         <br />
@@ -61,6 +64,7 @@ const Sell = () => {
               placeholder="Set a Price"
               name="price"
               required="true"
+              
             />
           </Col>
         </Form.Group>
