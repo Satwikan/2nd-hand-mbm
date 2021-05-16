@@ -61,6 +61,7 @@ const Sell = () => {
               placeholder="Set a Price"
               name="price"
               required="true"
+              
             />
           </Col>
         </Form.Group>

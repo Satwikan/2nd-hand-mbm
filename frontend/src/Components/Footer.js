@@ -17,20 +17,20 @@ const Footer = () => {
                   </div>
                   <div class="col-md-3 m-b-30">
                       <div class="footer-title m-t-5 m-b-20 p-b-8">
-                          Latest themes
+                         Links
                       </div>	
                       <div class="footer-links">
                           <a href="#">
-                              Appointment
+                              Seller
                           </a>
                           <a href="#">
-                              Health center
+                              MBM Engineering College
                           </a>
                           <a href="#">
-                              Quality
+                              Buyer
                           </a>
                           <a href="#">
-                              Wallstreet
+                              Products
                           </a>
                       </div>
                   </div>
@@ -72,7 +72,7 @@ const Footer = () => {
                           </a>
                       </div>
   
-                      <div class="footer-social-links m-t-30">
+                      {/* <div class="footer-social-links m-t-30">
                           <li>
                               <a href="#">
                                   <i class="fa fa-facebook" aria-hidden="true"></i>
@@ -87,7 +87,7 @@ const Footer = () => {
                                   <i class="fa fa-youtube" aria-hidden="true"></i>
                               </a>
                           </li>
-                      </div>
+                      </div> */}
                   </div>
               </div>
           </div>
