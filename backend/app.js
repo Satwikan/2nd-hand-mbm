@@ -3,13 +3,30 @@ var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
 var logger = require("morgan");
-const cors = require('cors')
+const cors = require("cors");
+const mongoose = require("mongoose");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var sellRouter = require("./routes/sellRouter");
 
 var app = express();
+const admin = { username: "satwikan_", password: "satwikan" };
+
+const uri = `mongodb+srv://${admin.username}:${admin.password}@cluster0.7dmsc.mongodb.net/dataFarm?retryWrites=true&w=majority`;
+const connect = mongoose.connect(uri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+});
+
+connect.then(
+  (db) => {
+    console.log("Connected correctly to server");
+  },
+  (err) => {
+    console.log(err);
+  }
+);
 
 // view engine setup
 app.set("views", path.join(__dirname, "views"));
@@ -21,7 +38,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
 
-app.use(cors())
+app.use(cors());
 
 app.use("/", indexRouter);
 app.use("/users", usersRouter);
