@@ -3,7 +3,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form, Row, Col } from "react-bootstrap";
 import "./Sell.css";
 import axios from "axios";
-document.body.style = 'background: #E0FFFF;';
+
 
 const Sell = () => {
   const onFormSubmit = (e) => {

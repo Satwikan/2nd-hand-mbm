@@ -5,12 +5,17 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
+  background-image: linear-gradient(to right, #ed6ea0 0%, #ec8c69 100%);
+  /* background-image: linear-gradient(to top, #fcc5e4 0%, #fda34b 15%, #ff7882 35%, #c8699e 52%, #7046aa 71%, #0c1db8 87%, #020f75 100%); */
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+	
 }
+
 
 .footer{
 	padding: 1rem;
@@ -79,8 +84,8 @@ code {
 	  width: 100%;
 	  padding: 1rem;
 	  text-align: center;
-	  color: #fff;
-	  background:darkgreen;
+	  color: red ;
+	  background: turquoise ;
 	bottom: 0;
 	left: 0;
   }
