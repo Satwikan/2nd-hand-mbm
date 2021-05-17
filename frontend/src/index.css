@@ -16,7 +16,7 @@ code {
 	padding: 1rem;
     width: 100%;
     /* background: #3B008D; */
-	background: slategrey;
+	background:rgba(0, 0, 0, 0.979);
     color: #fff;
   bottom: 0;
   left: 0;
@@ -24,7 +24,7 @@ code {
   }
   .footer-title{
 	position: relative;
-    color: #fff;
+    color: beige;
 	font-size: 24px;
     font-weight: 600;
     margin-top: 5px;
@@ -69,7 +69,7 @@ code {
 	  -webkit-transition: background 0.3s ease-in-out;
 	  -moz-transition: background 0.3s ease-in-out;
 	  transition: background 0.3s ease-in-out;
-	background:#3B008D;
+	background:chartreuse ;
   }
   .footer-social-links a:hover{
 	  background: #ff304d;
@@ -80,7 +80,7 @@ code {
 	  padding: 1rem;
 	  text-align: center;
 	  color: #fff;
-	  background: rgb(9, 95, 234);
+	  background:darkgreen;
 	bottom: 0;
 	left: 0;
   }
