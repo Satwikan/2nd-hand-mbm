@@ -4,7 +4,6 @@ import { Button, Form, Row, Col } from "react-bootstrap";
 import "./Sell.css";
 import axios from "axios";
 
-
 const Sell = () => {
   const onFormSubmit = (e) => {
     e.preventDefault();
@@ -18,6 +17,37 @@ const Sell = () => {
       })
       .catch((err) => console.log(err));
       alert('We got your Submission! 😁');
+  };
+  window.onload = function () {
+    //var fileUpload= document.querySelector("fileupload");
+     var fileUpload = document.getElementById("fileupload");
+    fileUpload.onchange = function () {
+        if (typeof (FileReader) != "undefined") {
+            var dvPreview = document.getElementById("dvPreview");
+            dvPreview.innerHTML = "";
+            var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+            for (var i = 0; i < fileUpload.files.length; i++) {
+                var file = fileUpload.files[i];
+                if (regex.test(file.name.toLowerCase())) {
+                    var reader = new FileReader();
+                    reader.onload = function (e) {
+                        var img = document.createElement("IMG");
+                        img.height = "100";
+                        img.width = "100";
+                        img.src = e.target.result;
+                        dvPreview.appendChild(img);
+                    }
+                    reader.readAsDataURL(file);
+                } else {
+                    alert(file.name + " is not a valid image file.");
+                    dvPreview.innerHTML = "";
+                    return false;
+                }
+            }
+        } else {
+            alert("This browser does not support HTML5 FileReader.");
+        }
+    }
   };
   
   return (
@@ -80,7 +110,7 @@ const Sell = () => {
             accept="image/*"
           />
           <div id="dvPreview">
-</div>
+            </div>
         </Form.Group>
         <br />
 
@@ -91,35 +121,8 @@ const Sell = () => {
     </div>
   );
 };
-window.onload = function () {
-    var fileUpload = document.getElementById("fileupload");
-    fileUpload.onchange = function () {
-        if (typeof (FileReader) != "undefined") {
-            var dvPreview = document.getElementById("dvPreview");
-            dvPreview.innerHTML = "";
-            var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
-            for (var i = 0; i < fileUpload.files.length; i++) {
-                var file = fileUpload.files[i];
-                if (regex.test(file.name.toLowerCase())) {
-                    var reader = new FileReader();
-                    reader.onload = function (e) {
-                        var img = document.createElement("IMG");
-                        img.height = "100";
-                        img.width = "100";
-                        img.src = e.target.result;
-                        dvPreview.appendChild(img);
-                    }
-                    reader.readAsDataURL(file);
-                } else {
-                    alert(file.name + " is not a valid image file.");
-                    dvPreview.innerHTML = "";
-                    return false;
-                }
-            }
-        } else {
-            alert("This browser does not support HTML5 FileReader.");
-        }
-    }
-};
+
+        
+
 
 export default Sell;
