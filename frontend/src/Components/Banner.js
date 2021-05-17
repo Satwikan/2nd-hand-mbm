@@ -10,7 +10,7 @@ const Banner = () => {
           <img
             className="d-block w-100"
             style={carouselStyle}
-            src="/banner.jpg"
+            src="/banner2.jpg"
             alt="First slide"
           />
           <Carousel.Caption></Carousel.Caption>
@@ -20,7 +20,7 @@ const Banner = () => {
           <img
             className="d-block w-100"
             style={carouselStyle}
-            src="/banner2.jpg"
+            src="/banner.jpg"
             alt="Second slide"
           />
           <Carousel.Caption></Carousel.Caption>

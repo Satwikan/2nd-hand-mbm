@@ -23,16 +23,16 @@ const Footer = () => {
                           Latest themes
                       </div>	
                       <div class="footer-links">
-                          <a href="#">
+                          <a href="https://github.com/Satwikan/2nd-hand-mbm">
                               Seller
                           </a>
-                          <a href="#">
+                          <a href="https://github.com/Satwikan/2nd-hand-mbm">
                               Buyer
                           </a>
-                          <a href="#">
+                          <a href="https://github.com/Satwikan/2nd-hand-mbm">
                               MBM Enginerring College
                           </a>
-                          <a href="#">
+                          <a href="https://github.com/Satwikan/2nd-hand-mbm">
                               Products
                           </a>
                       </div>
@@ -42,16 +42,16 @@ const Footer = () => {
                           Quick Links
                       </div>	
                       <div class="footer-links">
-                          <a href="#">
+                          <a href="https://github.com/Satwikan/2nd-hand-mbm">
                               Blog
                           </a>
-                          <a href="#">
+                          <a href="https://github.com/Satwikan/2nd-hand-mbm">
                               FAQ
                           </a>
-                          <a href="#">
+                          <a href="https://github.com/Satwikan/2nd-hand-mbm">
                               Terms & conditions
                           </a>
-                          <a href="#">
+                          <a href="https://github.com/Satwikan/2nd-hand-mbm">
                               Privacy policy
                           </a>
                       </div>
@@ -61,16 +61,16 @@ const Footer = () => {
                           Support
                       </div>	
                       <div class="footer-links">
-                          <a href="#">
+                          <a href="https://github.com/Satwikan/2nd-hand-mbm">
                               Affiliate
                           </a>
-                          <a href="#">
+                          <a href="https://github.com/Satwikan/2nd-hand-mbm">
                               Login
                           </a>
-                          <a href="#">
+                          <a href="https://github.com/Satwikan/2nd-hand-mbm">
                               All theme package
                           </a>
-                          <a href="#">
+                          <a href="https://github.com/Satwikan/2nd-hand-mbm">
                               Support forum
                           </a>
                       </div>
@@ -108,16 +108,16 @@ export default Footer;
 //             <h5 className="title">Links</h5>
 //             <ul>
 //               <li className="list-unstyled">
-//                 <a href="#!">Link 1</a>
+//                 <a href="https://github.com/Satwikan/2nd-hand-mbm!">Link 1</a>
 //               </li>
 //               <li className="list-unstyled">
-//                 <a href="#!">Link 2</a>
+//                 <a href="https://github.com/Satwikan/2nd-hand-mbm!">Link 2</a>
 //               </li>
 //               <li className="list-unstyled">
-//                 <a href="#!">Link 3</a>
+//                 <a href="https://github.com/Satwikan/2nd-hand-mbm!">Link 3</a>
 //               </li>
 //               <li className="list-unstyled">
-//                 <a href="#!">Link 4</a>
+//                 <a href="https://github.com/Satwikan/2nd-hand-mbm!">Link 4</a>
 //               </li>
 //             </ul>
 //           </MDBCol>
