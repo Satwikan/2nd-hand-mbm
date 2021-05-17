@@ -14,7 +14,7 @@ import history from "../history";
 class Header extends React.Component {
   render() {
     return (
-      <Navbar bg="lg" expand="lg">
+      <Navbar bg="danger" expand="lg">
         <Navbar.Brand onClick={() => history.push('/')}> <strong> 2nd HAND-MBM </strong> </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
