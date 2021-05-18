@@ -16,44 +16,46 @@ const Sell = () => {
         console.log(response);
       })
       .catch((err) => console.log(err));
-      alert('We got your Submission! 😁');
+    alert("We got your Submission! 😁");
   };
-  window.onload = function () {
-    //var fileUpload= document.querySelector("fileupload");
-     var fileUpload = document.getElementById("fileupload");
+  const uploadImage = () => {
+    var fileUpload = document.getElementById("fileUpload");
     fileUpload.onchange = function () {
-        if (typeof (FileReader) != "undefined") {
-            var dvPreview = document.getElementById("dvPreview");
+      if (typeof FileReader != "undefined") {
+        var dvPreview = document.getElementById("dvPreview");
+        dvPreview.innerHTML = "";
+        var regex = /^(.+)+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+        for (var i = 0; i < fileUpload.files.length; i++) {
+          var file = fileUpload.files[i];
+          if (regex.test(file.name.toLowerCase())) {
+            var reader = new FileReader();
+            reader.onload = function (e) {
+              var img = document.createElement("IMG");
+              img.height = "100";
+              img.width = "100";
+              img.src = e.target.result;
+              dvPreview.appendChild(img);
+            };
+            reader.readAsDataURL(file);
+          } else {
+            alert(file.name + " is not a valid image file.");
             dvPreview.innerHTML = "";
-            var regex = /^([a-zA-Z0-9\s_\\.\-:])+(.jpg|.jpeg|.gif|.png|.bmp)$/;
-            for (var i = 0; i < fileUpload.files.length; i++) {
-                var file = fileUpload.files[i];
-                if (regex.test(file.name.toLowerCase())) {
-                    var reader = new FileReader();
-                    reader.onload = function (e) {
-                        var img = document.createElement("IMG");
-                        img.height = "100";
-                        img.width = "100";
-                        img.src = e.target.result;
-                        dvPreview.appendChild(img);
-                    }
-                    reader.readAsDataURL(file);
-                } else {
-                    alert(file.name + " is not a valid image file.");
-                    dvPreview.innerHTML = "";
-                    return false;
-                }
-            }
-        } else {
-            alert("This browser does not support HTML5 FileReader.");
+            return false;
+          }
         }
-    }
+      } else {
+        alert("This browser does not support HTML5 FileReader.");
+      }
+    };
   };
-  
+
   return (
-    <div id="container" style={{ 
-      backgroundImage: `url("https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/06/BUILD-GREAT-CORPORATE-DESIGN.jpg?auto=format&q=60&w=1600&h=1000&fit=crop&crop=faces")` 
-    }}>
+    <div
+      id="container"
+      style={{
+        backgroundImage: `url("https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/06/BUILD-GREAT-CORPORATE-DESIGN.jpg?auto=format&q=60&w=1600&h=1000&fit=crop&crop=faces")`,
+      }}
+    >
       <Form id="form" onSubmit={onFormSubmit}>
         <h1> Seller Page </h1>
         <br />
@@ -94,7 +96,6 @@ const Sell = () => {
               placeholder="Set a Price"
               name="price"
               required="true"
-              
             />
           </Col>
         </Form.Group>
@@ -102,15 +103,15 @@ const Sell = () => {
 
         <Form.Group>
           <Form.File
-            id="fileupload"
+            id="fileUpload"
             label="Upload Image"
             name="image"
             required="true"
-            multiple="mutliple"
+            multiple
             accept="image/*"
+            onInput={uploadImage}
           />
-          <div id="dvPreview">
-            </div>
+          <div id="dvPreview"></div>
         </Form.Group>
         <br />
 
@@ -121,8 +122,5 @@ const Sell = () => {
     </div>
   );
 };
-
-        
-
 
 export default Sell;

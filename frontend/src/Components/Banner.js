@@ -9,7 +9,8 @@ const Banner = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            style={carouselStyle}
+            // This image is little too bright that's why i applied extra css
+            style={{ filter: "brightness(80%)", ...carouselStyle }}
             src="/banner2.jpg"
             alt="First slide"
           />
