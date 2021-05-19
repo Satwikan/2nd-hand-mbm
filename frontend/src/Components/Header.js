@@ -6,7 +6,7 @@ import "./Header.css";
 
 const Header = () => {
   const headColorLight = { color: "#4DA8DA" };
-  const headColorDark = { color: "#12232E" };
+  const headColorDark = { color: "MidnightBlue" };
 
   return (
     <Navbar expand="lg" id="headBar">
@@ -21,13 +21,23 @@ const Header = () => {
       <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="mx-auto">
           <Form inline>
-            <FormControl
+            {/* <FormControl
               type="text"
               placeholder="Find some products..."
-              className="search-bar mx-auto"
+              className="search-bar mx-auto search__input"
               style={{ width: "500px" }}
-            />
-            {/* <Button variant="outline-success">Search</Button> */}
+            /> */}
+            <div class="col-rt-3 equal-height">
+              <div class="sb-example-3">
+                <div class="search__container">
+                  <input
+                    class="search__input"
+                    type="text"
+                    placeholder="Find some products..."
+                  />
+                </div>
+              </div>
+            </div>
           </Form>
         </Nav>
 
@@ -35,14 +45,14 @@ const Header = () => {
           <i class="fa fa-plus"></i> SELL
         </button>
         <NavDropdown title="My Profile" id="basic-nav-dropdown">
-          <NavDropdown.Item href="#action/3.1" style={headColorDark}>
-            My Ads
-          </NavDropdown.Item>
-          <NavDropdown.Item href="#action/3.1" style={headColorDark}>
-            Favorites
-          </NavDropdown.Item>
           <NavDropdown.Item href="#action/3.2" style={headColorDark}>
-            Profile
+            Profile &emsp; <i class="fas fa-user-circle"></i>
+          </NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.1" style={headColorDark}>
+            My Ads &emsp; <i class="fas fa-ad"></i>
+          </NavDropdown.Item>
+          <NavDropdown.Item href="#action/3.1" style={headColorDark}>
+            Favorites &ensp; <i class="far fa-heart"></i>
           </NavDropdown.Item>
           <NavDropdown.Divider />
           <NavDropdown.Item
@@ -50,7 +60,7 @@ const Header = () => {
             className="logout-button"
             style={{ color: "red" }}
           >
-            <b>Logout</b>
+            <b>Logout</b> &emsp; <i class="fas fa-sign-out-alt"></i>
           </NavDropdown.Item>
         </NavDropdown>
       </Navbar.Collapse>
