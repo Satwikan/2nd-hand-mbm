@@ -1,6 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Navbar, Nav, Form, FormControl, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, Form, NavDropdown } from "react-bootstrap";
 import history from "../history";
 import "./Header.css";
 
@@ -41,13 +41,9 @@ const Header = () => {
           </Form>
         </Nav>
 
-
-
         <button onClick={() => history.push("/Sell")} id="sell-button">
           <i class="fa fa-plus"></i> SELL
         </button>
-
-
 
         <NavDropdown title="My Profile" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.2" style={headColorDark}>

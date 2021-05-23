@@ -5,6 +5,7 @@ var cookieParser = require("cookie-parser");
 var logger = require("morgan");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const fileUpload = require("express-fileupload");
 
 
 var indexRouter = require("./routes/index");
@@ -22,7 +23,7 @@ const connect = mongoose.connect(uri, {
 
 connect.then(
   (db) => {
-    console.log("Connected correctly to server");
+    console.log("database is connected 🏢");
   },
   (err) => {
     console.log(err);
@@ -38,6 +39,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+app.use(fileUpload());
 
 app.use(cors());
 

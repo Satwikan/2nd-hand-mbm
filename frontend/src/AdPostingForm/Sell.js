@@ -2,23 +2,22 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form, Row, Col } from "react-bootstrap";
 import "./Sell.css";
-import axios from "axios";
+// import axios from "axios";
 
 const Sell = () => {
-  
-  const onFormSubmit = (e) => {
-    e.preventDefault();
-    const formData = new FormData(e.target),
-      formDataObj = Object.fromEntries(formData.entries());
-    console.log(formDataObj);
-    axios
-      .post("http://localhost:5000/post", formDataObj)
-      .then(function (response) {
-        console.log(response);
-      })
-      .catch((err) => console.log(err));
-    alert("We got your Submission! 😁");
-  };
+  // const onFormSubmit = (e) => {
+  //   e.preventDefault();
+  //   const formData = new FormData(e.target),
+  //     formDataObj = Object.fromEntries(formData.entries());
+  //   console.log(formDataObj);
+  //   axios
+  //     .post("http://localhost:5000/post", formDataObj)
+  //     .then(function (response) {
+  //       console.log(response);
+  //     })
+  //     .catch((err) => console.log(err));
+  //   alert("We got your Submission! 😁");
+  // };
   const uploadImage = () => {
     var fileUpload = document.getElementById("fileUpload");
     fileUpload.onchange = function () {
@@ -26,9 +25,12 @@ const Sell = () => {
         var dvPreview = document.getElementById("dvPreview");
         dvPreview.innerHTML = "";
         var regex = /^(.+)+(.jpg|.jpeg|.gif|.png|.bmp)$/;
+        if (fileUpload.files.length > 4) {
+          alert("we can't accept more than 4 images 😳");
+          return false;
+        }
         for (var i = 0; i < fileUpload.files.length; i++) {
           var file = fileUpload.files[i];
-         
           if (regex.test(file.name.toLowerCase())) {
             var reader = new FileReader();
             reader.onload = function (e) {
@@ -39,7 +41,6 @@ const Sell = () => {
               dvPreview.appendChild(img);
             };
             reader.readAsDataURL(file);
-
           } else {
             alert(file.name + " is not a valid image file.");
             dvPreview.innerHTML = "";
@@ -59,13 +60,18 @@ const Sell = () => {
         backgroundImage: `url("https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/06/BUILD-GREAT-CORPORATE-DESIGN.jpg?auto=format&q=60&w=1600&h=1000&fit=crop&crop=faces")`,
       }}
     >
-      <Form id="form" onSubmit={onFormSubmit}>
+      <Form
+        id="form"
+        action="/post"
+        method="POST"
+        enctype="multipart/form-data"
+      >
         <h1> Seller Page </h1>
         <br />
         <Form.Label>Add Title</Form.Label>
         <Form.Control
           type="text"
-          placeholder="Text"
+          placeholder="an attractive title..."
           name="title"
           required="true"
         />
@@ -73,7 +79,6 @@ const Sell = () => {
           Mention the key features of your item(e.g brand,model,age type)
         </Form.Text>
         <br />
-
         <Form.Group>
           <Form.Label>Description</Form.Label>
           <Form.Control
@@ -89,14 +94,15 @@ const Sell = () => {
         <hr size="8" width="100%" color="black" />
         Category : &nbsp;&nbsp;
         <select width="100%" color="black" required="true" name="category">
-        <option>Computer Science And Engineering</option>
-        <option>Electrical Engineering</option>
-        <option>Mechanical Engineering</option>
-        <option>Civil Engineering</option>
-        <option>None Of the Above</option>
-      </select>
-      <br/>
-        <br/>
+          <option name="computer">Computer Science related books 💻</option>
+          <option name="electrical">Electrical related books ⚡</option>
+          <option>Mechanical related books 🦾</option>
+          <option>Civil related books 🧱</option>
+          <option>Accessories(Drafter...etc)🔌</option>
+          <option>None these match my thing 😁</option>
+        </select>
+        <br />
+        <br />
         <Form.Group as={Row}>
           <Form.Label column sm="2">
             Price (₹)
@@ -111,12 +117,11 @@ const Sell = () => {
           </Col>
         </Form.Group>
         <hr size="8" width="100%" color="black" />
-     
         <Form.Group>
           <Form.File
             id="fileUpload"
             label="Upload Image"
-            name="image"
+            name="images"
             required="true"
             multiple
             accept="image/*"
@@ -124,11 +129,9 @@ const Sell = () => {
           />
           <div id="dvPreview"></div>
         </Form.Group>
-      
         <br />
-  
         <Button type="submit" id="sell-button">
-        <strong> POST NOW </strong>  
+          <strong> POST NOW </strong>
         </Button>
       </Form>
     </div>
