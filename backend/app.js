@@ -6,6 +6,7 @@ var logger = require("morgan");
 const cors = require("cors");
 const mongoose = require("mongoose");
 
+
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var sellRouter = require("./routes/sellRouter");
@@ -48,6 +49,8 @@ app.use("/post", sellRouter);
 app.use(function (req, res, next) {
   next(createError(404));
 });
+
+
 
 // error handler
 app.use(function (err, req, res, next) {

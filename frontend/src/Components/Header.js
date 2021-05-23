@@ -41,9 +41,14 @@ const Header = () => {
           </Form>
         </Nav>
 
+
+
         <button onClick={() => history.push("/Sell")} id="sell-button">
           <i class="fa fa-plus"></i> SELL
         </button>
+
+
+
         <NavDropdown title="My Profile" id="basic-nav-dropdown">
           <NavDropdown.Item href="#action/3.2" style={headColorDark}>
             Profile &emsp; <i class="fas fa-user-circle"></i>

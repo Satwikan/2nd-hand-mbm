@@ -5,6 +5,7 @@ import "./Sell.css";
 import axios from "axios";
 
 const Sell = () => {
+  
   const onFormSubmit = (e) => {
     e.preventDefault();
     const formData = new FormData(e.target),
@@ -27,6 +28,7 @@ const Sell = () => {
         var regex = /^(.+)+(.jpg|.jpeg|.gif|.png|.bmp)$/;
         for (var i = 0; i < fileUpload.files.length; i++) {
           var file = fileUpload.files[i];
+         
           if (regex.test(file.name.toLowerCase())) {
             var reader = new FileReader();
             reader.onload = function (e) {
@@ -37,6 +39,7 @@ const Sell = () => {
               dvPreview.appendChild(img);
             };
             reader.readAsDataURL(file);
+
           } else {
             alert(file.name + " is not a valid image file.");
             dvPreview.innerHTML = "";
@@ -84,8 +87,16 @@ const Sell = () => {
           Include condition , features, and reason for selling
         </Form.Text>
         <hr size="8" width="100%" color="black" />
-
-        <br />
+        Category : &nbsp;&nbsp;
+        <select width="100%" color="black" required="true" name="category">
+        <option>Computer Science And Engineering</option>
+        <option>Electrical Engineering</option>
+        <option>Mechanical Engineering</option>
+        <option>Civil Engineering</option>
+        <option>None Of the Above</option>
+      </select>
+      <br/>
+        <br/>
         <Form.Group as={Row}>
           <Form.Label column sm="2">
             Price (₹)
@@ -100,7 +111,7 @@ const Sell = () => {
           </Col>
         </Form.Group>
         <hr size="8" width="100%" color="black" />
-
+     
         <Form.Group>
           <Form.File
             id="fileUpload"
@@ -113,10 +124,11 @@ const Sell = () => {
           />
           <div id="dvPreview"></div>
         </Form.Group>
+      
         <br />
-
-        <Button variant="primary" type="submit">
-          Post Now
+  
+        <Button type="submit" id="sell-button">
+        <strong> POST NOW </strong>  
         </Button>
       </Form>
     </div>

@@ -13,6 +13,10 @@ const Ad = new Schema(
       type: String,
       required: true,
     },
+    category:{
+      type:String,
+      required:true,
+    },
     price: {
       type: Currency,
       required: true,
