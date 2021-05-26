@@ -2,22 +2,31 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Button, Form, Row, Col } from "react-bootstrap";
 import "./Sell.css";
-// import axios from "axios";
+import axios from "axios";
+
+// Testing token
+const token =
+  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJfaWQiOiI2MGFkZDM2ODU2ZGNjZDE2ZGM5NjZjYzYiLCJpYXQiOjE2MjIwMDU0MDgsImV4cCI6MTYyNTYwNTQwOH0.JIAUk9uLcsLFrqOr0FYAmG1fCJCudKmRwusMXFH100g";
 
 const Sell = () => {
-  // const onFormSubmit = (e) => {
-  //   e.preventDefault();
-  //   const formData = new FormData(e.target),
-  //     formDataObj = Object.fromEntries(formData.entries());
-  //   console.log(formDataObj);
-  //   axios
-  //     .post("http://localhost:5000/post", formDataObj)
-  //     .then(function (response) {
-  //       console.log(response);
-  //     })
-  //     .catch((err) => console.log(err));
-  //   alert("We got your Submission! 😁");
-  // };
+  const onFormSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target),
+      formDataObj = Object.fromEntries(formData.entries());
+    console.log(formDataObj);
+    axios
+      .post("http://localhost:5000/post", formDataObj, {
+        headers: {
+          Authorization: `Bearer ${token}`,
+          // "Content-Type": "multipart/form-data",
+        },
+      })
+      .then(function (response) {
+        console.log(response);
+      })
+      .catch((err) => console.log(err));
+    alert("We got your Submission! 😁");
+  };
   const uploadImage = () => {
     var fileUpload = document.getElementById("fileUpload");
     fileUpload.onchange = function () {
@@ -61,10 +70,11 @@ const Sell = () => {
       }}
     >
       <Form
-        id="form"
-        action="/post"
-        method="POST"
-        enctype="multipart/form-data"
+        // id="form"
+        // action="http://localhost:5000/post"
+        // method="POST"
+        // enctype="multipart/form-data"
+        onSubmit={onFormSubmit}
       >
         <h1> Seller Page </h1>
         <br />
@@ -130,6 +140,8 @@ const Sell = () => {
           <div id="dvPreview"></div>
         </Form.Group>
         <br />
+        {/* Tried to send post request through form itself with auth token*/}
+        {/* <input type="hidden" name="jwt" value={token} /> */}
         <Button type="submit" id="sell-button">
           <strong> POST NOW </strong>
         </Button>

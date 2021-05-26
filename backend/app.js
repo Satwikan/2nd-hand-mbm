@@ -2,21 +2,20 @@ var createError = require("http-errors");
 var express = require("express");
 var path = require("path");
 var cookieParser = require("cookie-parser");
-var logger = require("morgan");
 const cors = require("cors");
 const mongoose = require("mongoose");
+const passport = require("passport");
+var logger = require("morgan");
 const fileUpload = require("express-fileupload");
-
+const config = require("./config");
 
 var indexRouter = require("./routes/index");
 var usersRouter = require("./routes/users");
 var sellRouter = require("./routes/sellRouter");
 
 var app = express();
-const admin = { username: "satwikan_", password: "satwikan" };
 
-const uri = `mongodb+srv://${admin.username}:${admin.password}@cluster0.7dmsc.mongodb.net/dataFarm?retryWrites=true&w=majority`;
-const connect = mongoose.connect(uri, {
+const connect = mongoose.connect(config.mongoUri, {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
@@ -39,6 +38,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, "public")));
+app.use(passport.initialize());
 app.use(fileUpload());
 
 app.use(cors());
@@ -51,8 +51,6 @@ app.use("/post", sellRouter);
 app.use(function (req, res, next) {
   next(createError(404));
 });
-
-
 
 // error handler
 app.use(function (err, req, res, next) {
