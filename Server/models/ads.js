@@ -1,8 +1,9 @@
 const mongoose = require("mongoose");
+
 const {ObjectId} = mongoose.Schema;
 
 
-const Ad = new Schema(
+const Ad = new mongoose.Schema(
   {
     title: {
       type: String,
@@ -12,8 +13,25 @@ const Ad = new Schema(
       type: String,
       required: true,
     },
+    email: {
+      type: String,
+      // required: true,
+    },
+    phone: {
+      type: Number,
+      required: true,
+    },
+    name: {
+      type: String,
+      // required: true,
+    },
+    user:{
+      type: ObjectId,
+      ref: "User",
+      require: true
+    },
     price: {
-      type: Currency,
+      type: Number,
       required: true,
       min: 0,
     },
@@ -25,4 +43,4 @@ const Ad = new Schema(
 
 
 
-module.exports = mongoose.model("Ad", Ad);
+module.exports = mongoose.model("AdS", Ad);

@@ -1,6 +1,7 @@
 const Product = require("../models/product");
 const slugify = require('slugify');
 const User = require("../models/user");
+const ADS = require("../models/ads");
 
 
 
@@ -9,6 +10,20 @@ exports.create = async(req, res) => {
         
         req.body.slug = slugify(req.body.title);
         const newProduct = await new Product(req.body).save();
+        
+        res.json(newProduct);
+    }catch(err){
+        res.status(400).json({
+            err: err.message,
+        })
+    }
+    
+}
+exports.poster = async(req, res) => {
+    try{
+        
+        // req.body.slug = slugify(req.body.title);
+        const newProduct = await new ADS(req.body).save();
         
         res.json(newProduct);
     }catch(err){

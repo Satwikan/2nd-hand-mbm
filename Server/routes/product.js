@@ -1,5 +1,5 @@
 const express = require("express");
-const { create, listAll, removes, list, productcount,reads ,listRelated} = require("../controllers/product");
+const { create, listAll, removes, list, productcount,reads ,listRelated, poster} = require("../controllers/product");
 // const {  } = require("../controllers/auth");
 const { authCheck,  adminCheck} = require("../middlerware/auth");
 
@@ -18,7 +18,7 @@ router.post('/products',list);
 // router.put('/product/star/:productId',authCheck, productStar);
 router.get('/product/related/:productId', listRelated);
 
-
+router.post('/post',poster)
 
 
 
