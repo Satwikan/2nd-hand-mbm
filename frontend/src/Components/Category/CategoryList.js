@@ -7,8 +7,8 @@ const CONSTANTS = require("../../cssVariables");
 
 function CategoryList() {
   const style = {
-    "background-color": CONSTANTS.background,
-    color: CONSTANTS.text,
+ 
+      color: "#203647",
     
   };
   const [categories, setCategories] = useState([]);
@@ -26,7 +26,7 @@ function CategoryList() {
     categories.map((c) => (
       <div
         key={c._id}
-        className="btn col btn-outlined-primary btn-lg btn-block btn-raised m-3 "
+        className="btn col btn-lg btn-primary btn-raised m-3 "
       >
         <Link to={`/category/${c.slug}`} style={style}>
           {c.name}

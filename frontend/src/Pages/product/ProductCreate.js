@@ -7,7 +7,7 @@ import { Select } from "antd";
 
 import { useSelector } from "react-redux";
 import { toast } from "react-toastify";
-import FileUpload from "../../Components/Forms/FileUpload";
+import FileUpload from "../../Components/Forms/Fileupload";
 import Loader from "react-loader-spinner";
 function ProductCreate() {
   const initial = {

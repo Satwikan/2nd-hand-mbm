@@ -6,6 +6,11 @@ import { Link } from "react-router-dom";
 import { getsub, getsubs } from "../../Function/Sub";
 
 function SubCategoryList() {
+  const style = {
+
+    color: "#203647",
+    
+  };
   const [sub, setsub] = useState([]);
   const [loading, setLoading] = useState(false);
 
@@ -21,14 +26,14 @@ function SubCategoryList() {
     sub.map((c) => (
       <div
         key={c._id}
-        className="btn col btn-outlined-primary btn-lg btn-block btn-raised m-3 "
+        className="btn col btn-lg btn-primary btn-raised m-3 "
       >
-        <Link to={`/sub/${c.slug}`}>{c.name}</Link>
+        <Link to={`/sub/${c.slug}`} style={style} >{c.name}</Link>
       </div>
     ));
 
   return (
-    <div className="container">
+    <div className="container" style={style}>
       <div className="row">
         {loading ? (
           <Loader

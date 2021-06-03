@@ -28,6 +28,7 @@ function Home() {
         "background-color": CONSTANTS.background,
       }}
     >
+  <br /><br />
       <Banner />
       <div
         className="jumbotron h1 font-weight-bold text-center"
