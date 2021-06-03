@@ -42,10 +42,10 @@ const productSchema = new mongoose.Schema(
     images: {
       type: Array,
     },
-    seller: {
-      type: ObjectId,
-      ref: "User",
-    },
+    // seller: {
+    //   type: ObjectId,
+    //   ref: "User",
+    // },
   },
   {
     timestamps: true,

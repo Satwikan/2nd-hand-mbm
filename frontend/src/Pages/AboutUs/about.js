@@ -11,6 +11,9 @@ const About = () => {
         }}
         className="text-center h4 "
       >
+        <br/>
+        <br/>
+        <br/>
         <h2>Our Team</h2>
       </div>
       <hr />

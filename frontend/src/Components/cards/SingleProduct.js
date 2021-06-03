@@ -11,6 +11,11 @@ import { Tabs } from "antd";
 function SingleProduct({ product }) {
   const { Meta } = Card;
   const { TabPane } = Tabs;
+  const style = {
+    "letter-spacing": "2px",
+    "text-align": "center",
+    "font-family": "'Montserrat', sans-serif",
+  };
 
   function callback(key) {
     console.log(key);
@@ -18,6 +23,11 @@ function SingleProduct({ product }) {
 
   return (
     <>
+      <link rel="preconnect" href="https://fonts.gstatic.com" />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap"
+        rel="stylesheet"
+      />
       <div className="col-md-7">
         {product.images && product.images.length ? (
           <Carousel autoPlay infiniteLoop showArrows={true}>
@@ -47,8 +57,8 @@ function SingleProduct({ product }) {
       </div>
 
       <div className="col-md-5">
-        <h1 style={{ fontFamily: "cursive" }} className="bg-info p-3">
-          {product.title}
+        <h1 style={style} className="bg-info p-3">
+          <b>{product.title}</b>
         </h1>
         <Card
           actions={[

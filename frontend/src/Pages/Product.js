@@ -1,7 +1,7 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { getProducts, getRelated } from "../Function/Prodt";
+import { getProductss, getRelated } from "../Function/Prodt";
 
 import { useParams } from "react-router-dom";
 import SingleProduct from "../Components/cards/SingleProduct";
@@ -23,7 +23,7 @@ const Product = () => {
   }, [slug]);
 
   const loadSingleProduct = () => {
-    getProducts(slug).then((res) => {
+    getProductss(slug).then((res) => {
       setProduct(res.data);
       console.log(res.data._id);
       getRelated(res.data._id).then((res) => setRelated(res.data));
@@ -34,6 +34,10 @@ const Product = () => {
 
   return (
     <div className="container-fluid" style={style}>
+        <br/>
+        <br/>
+        <br/>
+
       <h2>Product Display</h2>
       <div className="row pt-4">
         <SingleProduct product={product} />
