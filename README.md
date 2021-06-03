@@ -2,6 +2,18 @@
  - Welcome to our project 2nd Hand MBM.
  - Here students of our college can get all the branch related books,
    technical equipments and other college exams related study material.
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+ ## Technologies Used
  - Front end -->CSS, Javascript
  - Front end Frame works--> Bootstrap, React
  - Back end -->Node js
