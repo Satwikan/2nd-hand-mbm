@@ -1,8 +1,8 @@
-const mongooose = require("mongoose");
+const mongoose = require("mongoose");
 
-const { ObjectId } = mongooose.Schema;
+const { ObjectId } = mongoose.Schema;
 
-const productSchema = new mongooose.Schema(
+const productSchema = new mongoose.Schema(
   {
     title: {
       type: String,
