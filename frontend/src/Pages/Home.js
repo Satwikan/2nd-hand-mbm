@@ -1,13 +1,8 @@
 import React from "react";
-import { useEffect } from "react";
 import { useState } from "react";
-
 import { useSelector } from "react-redux";
 import Jumbotron from "../Components/cards/Jumbotrons";
-
 import Banner from "../Components/cards/Banner";
-import Footer from "../Components/cards/Footer";
-
 import NewArrivals from "../Components/Home/NewArrivals";
 import MostSold from "../Components/Home/MostSold";
 import CategoryList from "../Components/Category/CategoryList";
@@ -19,9 +14,20 @@ function Home() {
   const [loading, setloading] = useState(false);
 
   const { user } = useSelector((state) => ({ ...state }));
-
+  const style = {
+    "background-color": CONSTANTS.shadowText,
+    color: CONSTANTS.background,
+    "letter-spacing": "4px",
+    width: "80vw",
+  };
   return (
-    <>
+    <div
+      style={{
+        display: "grid",
+        "place-items": "center",
+        "background-color": CONSTANTS.background,
+      }}
+    >
       <Banner />
       <div
         className="jumbotron h1 font-weight-bold text-center"
@@ -29,15 +35,12 @@ function Home() {
       >
         <Jumbotron />
       </div>
-
-      {/* // New Arrivals */}
-
       <NewArrivals />
       <br />
       <MostSold />
       <br />
       <h4
-        style={{ fontFamily: "cursive", fontWeight: "bold" }}
+        style={style}
         className="text-center p-3 mt-5 mb-5 display-4 jumbotron"
       >
         Categories
@@ -45,7 +48,7 @@ function Home() {
       <CategoryList />
       <br />
       <h4
-        style={{ fontFamily: "cursive", fontWeight: "bold" }}
+        style={style}
         className="text-center p-3 mt-5 mb-5 display-4 jumbotron"
       >
         Sub-Categories
@@ -53,8 +56,7 @@ function Home() {
       <SubCategoryList />
       <br />
       <br />
-      <Footer />
-    </>
+    </div>
   );
 }
 

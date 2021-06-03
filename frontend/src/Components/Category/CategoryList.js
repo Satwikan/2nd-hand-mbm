@@ -1,48 +1,56 @@
-import React, { useEffect } from 'react'
-import { useState } from 'react'
-import { getCategories } from '../../Function/Category';
+import React, { useEffect } from "react";
+import { useState } from "react";
+import { getCategories } from "../../Function/Category";
 import Loader from "react-loader-spinner";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
+const CONSTANTS = require("../../cssVariables");
 
 function CategoryList() {
-    const [categories, setCategories] = useState([])
-    const [loading, setLoading] = useState(false);
+  const style = {
+    "background-color": CONSTANTS.background,
+    color: CONSTANTS.text,
+    
+  };
+  const [categories, setCategories] = useState([]);
+  const [loading, setLoading] = useState(false);
 
-    useEffect(() => {
-        setLoading(true);
-        getCategories().then((c) => {
-            
-            setCategories(c.data);
-            setLoading(false);
-        })
-    },[])
-console.log(categories);
-const showCategory = () => categories.map((c) => <div
-    key={c._id}
-     className="btn col btn-outlined-primary btn-lg btn-block btn-raised m-3 ">
-        <Link to={`/category/${c.slug}`}>
-        {c.name}
+  useEffect(() => {
+    setLoading(true);
+    getCategories().then((c) => {
+      setCategories(c.data);
+      setLoading(false);
+    });
+  }, []);
+  console.log(categories);
+  const showCategory = () =>
+    categories.map((c) => (
+      <div
+        key={c._id}
+        className="btn col btn-outlined-primary btn-lg btn-block btn-raised m-3 "
+      >
+        <Link to={`/category/${c.slug}`} style={style}>
+          {c.name}
         </Link>
-    </div>
-    )
+      </div>
+    ));
 
-    return (
-        <div className="container">
-            <div className="row">
-                {loading ? (
-                    <Loader
-        type="Puff"
-        color="#00BFFF"
-        height={100}
-        width={100}
-        timeout={3000} //3 secs
-      />
-                ): 
-                    showCategory()
-                }
-            </div>
-        </div>
-    )
+  return (
+    <div className="container" style={style}>
+      <div className="row">
+        {loading ? (
+          <Loader
+            type="Puff"
+            color="#00BFFF"
+            height={100}
+            width={100}
+            timeout={3000} //3 secs
+          />
+        ) : (
+          showCategory()
+        )}
+      </div>
+    </div>
+  );
 }
 
-export default CategoryList
+export default CategoryList;

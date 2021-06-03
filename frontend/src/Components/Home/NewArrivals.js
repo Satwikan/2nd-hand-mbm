@@ -4,27 +4,27 @@ import { useState } from "react";
 import { Skeleton, Switch, Card, Avatar } from "antd";
 import { Pagination } from "antd";
 
-import { getproducts, getproductCount, getAds } from "../../Function/Prodt";
+import { getProducts, getProductCount, getAds } from "../../Function/Prodt";
 import ProductCard from "../cards/ProductCard";
 
 function NewArrivals() {
-  const [product, setproduct] = useState([]);
-  const [loading, setloading] = useState(false);
+  const [product, setProduct] = useState([]);
+  const [loading, setLoading] = useState(false);
   const [page, setPage] = useState(1);
   const [productCount, setProductCount] = useState(0);
   const { Meta } = Card;
 
   const loadProduct = () => {
-    setloading(true);
+    setLoading(true);
     getAds("createdAt", "desc", page)
       .then((res) => {
-        setproduct(res.data);
-        setloading(false);
+        setProduct(res.data);
+        setLoading(false);
         console.log(res.data);
       })
       .catch((err) => {
         console.log(err);
-        setloading(false);
+        setLoading(false);
       });
   };
   console.log(product);
@@ -33,21 +33,14 @@ function NewArrivals() {
   }, [page]);
 
   useEffect(() => {
-    getproductCount().then((res) => {
+    getProductCount().then((res) => {
       setProductCount(res.data);
     });
   }, []);
 
   return (
     <>
-      {/* // New Arrivals */}
-
-      <h4
-        style={{ fontFamily: "cursive" }}
-        className="text-center p-3 mt-5 mb-5 display-4 jumbotron"
-      >
-        New Arrivals
-      </h4>
+      <h4>New Arrivals</h4>
       <div className="container">
         {loading ? (
           <Skeleton loading={loading} avatar active>

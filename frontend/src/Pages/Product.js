@@ -1,13 +1,16 @@
 import React from "react";
 import { useEffect } from "react";
 import { useState } from "react";
-import { getProductss, getrelated } from "../Function/Prodt";
+import { getProducts, getRelated } from "../Function/Prodt";
 
 import { useParams } from "react-router-dom";
 import SingleProduct from "../Components/cards/SingleProduct";
 import ProductCard from "../Components/cards/ProductCard";
+const CONSTANTS = require("../cssVariables");
 
-function Product() {
+const Product = () => {
+  const style = { "letter-spacing": "2px", "text-align": "center" };
+
   const [product, setProduct] = useState({});
   const [related, setRelated] = useState([]);
 
@@ -20,26 +23,24 @@ function Product() {
   }, [slug]);
 
   const loadSingleProduct = () => {
-    getProductss(slug).then((res) => {
+    getProducts(slug).then((res) => {
       setProduct(res.data);
       console.log(res.data._id);
-      getrelated(res.data._id).then((res) => setRelated(res.data));
+      getRelated(res.data._id).then((res) => setRelated(res.data));
     });
   };
 
   console.log(related);
 
   return (
-    <div className="container-fluid">
+    <div className="container-fluid" style={style}>
+      <h2>Product Display</h2>
       <div className="row pt-4">
         <SingleProduct product={product} />
       </div>
 
       <div className="row p-5">
-        <div
-          style={{ fontWeight: "bold", fontFamily: "cursive" }}
-          className="col text-center pt-5 pb-5"
-        >
+        <div style={style}>
           <hr />
           <h4>Related Products</h4>
           <hr />
@@ -58,6 +59,6 @@ function Product() {
       </div>
     </div>
   );
-}
+};
 
 export default Product;

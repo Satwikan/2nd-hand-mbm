@@ -8,7 +8,6 @@ const {
   reads,
   listRelated,
   poster,
-  listAllAds,
 } = require("../controllers/product");
 // const {  } = require("../controllers/auth");
 const { authCheck, adminCheck } = require("../middlerware/auth");
@@ -29,6 +28,5 @@ router.post("/products", list);
 router.get("/product/related/:productId", listRelated);
 
 router.post("/post", poster);
-router.post("/ads", listAllAds);
 
 module.exports = router;

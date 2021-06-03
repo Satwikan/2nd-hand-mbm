@@ -8,6 +8,7 @@ import Home from "./Pages/Home";
 import Login from "./Pages/Auth/Login";
 import Register from "./Pages/Auth/Register";
 import Header from "./Components/Nav/Header";
+import Footer from "./Components/cards/Footer";
 import RegisterComplate from "./Pages/Auth/RegisterComplate";
 import Forgetpassword from "./Pages/Auth/Forgetpasswords";
 import { useDispatch } from "react-redux";
@@ -22,13 +23,16 @@ import AdminDashboard from "./Pages/admin/AdminDashboard";
 import CategoryCreate from "./Pages/admin/Category/CategoryCreate";
 import SubCreate from "./Pages/admin/sub/SubCreate";
 import ProductCreate from "./Pages/product/ProductCreate";
-import Allproduct from "./Pages/product/Allproduct";
+import AllProducts from "./Pages/product/Allproduct";
 import Product from "./Pages/Product";
 import CategoryHome from "./Pages/Category/CategoryHome";
 import SubCategoryList from "./Components/Category/SubCategoryList";
 import Subhome from "./Pages/Category/Subhome";
 import Sell from "./Components/cards/Sell";
 import About from "./Pages/AboutUs/about";
+
+const CONSTANTS = require("./cssVariables");
+
 const App = () => {
   const dispatch = useDispatch();
 
@@ -55,8 +59,13 @@ const App = () => {
     return () => OnSubcribe();
   }, []);
 
+  const AppStyle = {
+    "background-color": CONSTANTS.background,
+    color: CONSTANTS.text,
+  };
+
   return (
-    <div>
+    <div style={AppStyle}>
       <Header />
       <ToastContainer />
       <Switch>
@@ -112,9 +121,10 @@ const App = () => {
           <ProductCreate />
         </AdminRoute>
         <AdminRoute exact path="/admin/products">
-          <Allproduct />
+          <AllProducts />
         </AdminRoute>
       </Switch>
+      <Footer />
     </div>
   );
 };
