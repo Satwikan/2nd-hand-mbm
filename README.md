@@ -12,7 +12,6 @@
  - Authorization and Authentication -->Firebase
  - Database -->Mongo DB, Mongoose
 
-[fork my repository](https://github.com/user/repository/fork)
 
  
 ## Color Scheme for this Project:
