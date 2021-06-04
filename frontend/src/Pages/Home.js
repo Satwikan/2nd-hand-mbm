@@ -25,7 +25,7 @@ function Home() {
       style={{
         display: "grid",
         "place-items": "center",
-        "background-color": CONSTANTS.background,
+        "background-color": "hsl(201, 66%, 75%)",
       }}
     >
   <br /><br />

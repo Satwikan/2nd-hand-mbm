@@ -60,7 +60,7 @@ const App = () => {
   }, []);
 
   const AppStyle = {
-    "background-color": CONSTANTS.background,
+    "background-color": "hsl(201, 66%, 75%)",
     color: CONSTANTS.text,
   };
 

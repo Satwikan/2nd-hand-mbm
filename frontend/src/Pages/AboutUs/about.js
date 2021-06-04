@@ -11,9 +11,9 @@ const About = () => {
         }}
         className="text-center h4 "
       >
-        <br/>
-        <br/>
-        <br/>
+        <br />
+        <br />
+        <br />
         <h2>Our Team</h2>
       </div>
       <hr />
@@ -81,7 +81,7 @@ const About = () => {
         </figure>
         <figure className="snip1515">
           <div className="profile-image">
-            <img height="220px" src="LegendHimself.jpg" alt="sample47" />
+            <img height="220px" src="LegendHimself.jpg" alt="Satwik Anmol" />
           </div>
           <figcaption>
             <h3>Satwik Anmol</h3>

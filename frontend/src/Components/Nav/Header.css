@@ -22,6 +22,11 @@
   /* right */
 }
 
+img {
+  height: 10vh;
+  aspect-ratio: default;
+}
+
 .sb-example-3 .search__title {
   font-size: 22px;
   font-weight: 900;

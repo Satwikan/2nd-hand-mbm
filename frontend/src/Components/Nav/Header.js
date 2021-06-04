@@ -54,14 +54,9 @@ function Header() {
         mode="horizontal"
         style={{ "background-color": "#12232E" }}
       >
-        <Menu.Item
-          key="home"
-          icon={<AppstoreOutlined />}
-          style={{ color: "#4DA8DA" }}
-        >
-          <Link to="/" style={{ color: "#4DA8DA" }}>
-            {" "}
-            <strong> 2nd-hand MBM </strong>{" "}
+        <Menu.Item key="home" style={{ color: "#4DA8DA" }}>
+          <Link to="/">
+            <img src="logo.png" alt="2nd-HAND-MBM"/>
           </Link>
         </Menu.Item>
 
