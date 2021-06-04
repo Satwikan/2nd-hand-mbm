@@ -9,6 +9,7 @@ html {
 .about-container {
   display: flex;
   align-items: space-around;
+  flex-flow: row-reverse wrap;
 }
 
 .snip1515 {

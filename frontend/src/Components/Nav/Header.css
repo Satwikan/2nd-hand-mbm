@@ -6,9 +6,20 @@
 #sell-button {
   border-color: #f1b24a;
   border-radius: 20px;
-  border-width: 0.5em;
+  border-width: .6vw;
   background-color: #4da8da;
   color: #12232e;
+  min-width: 5vw;
+  margin-right: 3vw;
+  font-size: 3vh;
+}
+
+#about-button {
+  color: #4da8da;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-bottom: 1px solid #4da8da;
+  /* right */
 }
 
 .sb-example-3 .search__title {
