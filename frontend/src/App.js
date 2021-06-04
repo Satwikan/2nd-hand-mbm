@@ -67,6 +67,9 @@ const App = () => {
   return (
     <div style={AppStyle}>
       <Header />
+      <br />
+      <br />
+      <br />
       <ToastContainer />
       <Switch>
         <Route exact path="/">

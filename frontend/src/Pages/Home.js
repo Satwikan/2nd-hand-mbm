@@ -28,7 +28,8 @@ function Home() {
         "background-color": "hsl(201, 66%, 75%)",
       }}
     >
-  <br /><br />
+      <br />
+      <br />
       <Banner />
       <div
         className="jumbotron h1 font-weight-bold text-center"

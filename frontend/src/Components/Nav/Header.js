@@ -46,6 +46,7 @@ function Header() {
         width: "100%",
         "z-index": "9",
         color: "#4DA8DA",
+        "align-items": "center",
       }}
       className="main-container"
     >
@@ -82,9 +83,10 @@ function Header() {
             key="Login"
             className="float-right"
             icon={<UserOutlined />}
-            style={{ color: "#4DA8DA" }}
           >
-            <Link to="/login">Login</Link>
+            <Link to="/login" style={{ color: "#4DA8DA" }}>
+              Login
+            </Link>
           </Menu.Item>
         )}
 
@@ -93,9 +95,10 @@ function Header() {
             key="Register"
             icon={<UserAddOutlined />}
             className="float-right"
-            style={{ color: "#4DA8DA" }}
           >
-            <Link to="/register">Register</Link>
+            <Link to="/register" style={{ color: "#4DA8DA" }}>
+              Register
+            </Link>
           </Menu.Item>
         )}
 
@@ -109,7 +112,9 @@ function Header() {
           >
             {user && user.role === "subscriber" && (
               <Menu.Item key="setting:1">
-                <Link to="/">Dashboard</Link>
+                <Link to="/" style={{ color: "#4DA8DA" }}>
+                  Dashboard
+                </Link>
               </Menu.Item>
             )}
 
