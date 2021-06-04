@@ -1,18 +1,9 @@
-# 2nd HAND MBM
- - Welcome to our project 2nd Hand MBM.
- - Here students of our college can get all the branch related books,
-   technical equipments and other college exams related study material.
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
-   
+![logo1](https://user-images.githubusercontent.com/74481466/120747306-7191bf80-c51e-11eb-891d-5c644affcfc5.png)     
+ 
+ 
+ ## Overview
+ Welcome to our project 2nd Hand MBM. The goal of this project is to provide studets with all the branch realted books, technical equipments and other study related material. And this is an open source project so feel free to fork and clone this porject and try to add few more things in this project. 
+       
  ## Technologies Used
  - Front end -->CSS, Javascript
  - Front end Frame works--> Bootstrap, React
@@ -32,7 +23,7 @@
 
 - Shadow of Light Blue: #EEFBFB
 
-## Following are Contributers of the project
+## Contributers 
 - [Tanmay Goyal](https://github.com/tanmay12-sud0)
 - [Rajat Jain](https://github.com/Rajat-Jain29)
 - [Tanmay Mathur](https://github.com/RYzen-009)
