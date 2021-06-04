@@ -8,8 +8,6 @@
  <img src="https://img.shields.io/github/license/tesseractcoding/neoalgo?style=for-the-badge" /></a> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome" /> <a href="https://github.com/Satwikan/2nd-hand-mbm/pulls" target="_blank"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/tesseractcoding/neoalgo?style=for-the-badge" /></a> <a href="https://github.com/Satwikan/2nd-hand-mbm/issues" target="_blank"><img alt="GitHub issues" src="https://img.shields.io/github/issues/tesseractcoding/neoalgo?style=for-the-badge" /></a> 
  
 
-</p>
-
  ## Overview
  Welcome to our project 2nd Hand MBM. The goal of this project is to provide students with all the branch realted books, technical equipments and other study related material. And this is an open source project so feel free to fork and clone this project and try to add few more things in this project. 
        
