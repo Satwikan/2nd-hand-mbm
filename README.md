@@ -4,8 +4,9 @@
  ![GitHub Org's stars](https://img.shields.io/github/stars/Satwikan/2nd-hand-mbm?style=social)
 ![GitHub watchers](https://img.shields.io/github/watchers/Satwikan/2nd-hand-mbm?style=social)
 
-![GitHub issues](https://img.shields.io/github/issues/Satwikan/2nd-hand-MBM?color=blue&style=for-the-badge)
 ![GitHub issues](https://img.shields.io/github/issues/Satwikan/2nd-hand-MBM?color=green&style=for-the-badge)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/Satwikan/2nd-hand-MBM?color=red&style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Satwikan/2nd-hand-MBM?color=orange&style=for-the-badge)
 ![GitHub contributors](https://img.shields.io/github/contributors/Satwikan/2nd-hand-mbm?color=blue&style=for-the-badge)
 
  ## Overview
