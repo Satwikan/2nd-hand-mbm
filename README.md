@@ -1,12 +1,12 @@
-![logo1](https://user-images.githubusercontent.com/74481466/120747306-7191bf80-c51e-11eb-891d-5c644affcfc5.png)     
- 
- [![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/Satwikan/2nd-hand-mbm/network/members)
-[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://github.com/Satwikan/2nd-hand-mbm/stargazers)
-[![GitHub followers](https://img.shields.io/github/followers/Naereen.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/Naereen?tab=followers)
-[![GitHub watchers](https://img.shields.io/github/watchers/Naereen/StrapDown.js.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/watchers/)
+![logo1](https://user-images.githubusercontent.com/74481466/120747306-7191bf80-c51e-11eb-891d-5c644affcfc5.png)     \
 
- <img src="https://img.shields.io/github/license/tesseractcoding/neoalgo?style=for-the-badge" /></a> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome" /> <a href="https://github.com/Satwikan/2nd-hand-mbm/pulls" target="_blank"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/tesseractcoding/neoalgo?style=for-the-badge" /></a> <a href="https://github.com/Satwikan/2nd-hand-mbm/issues" target="_blank"><img alt="GitHub issues" src="https://img.shields.io/github/issues/tesseractcoding/neoalgo?style=for-the-badge" /></a> 
- 
+ ![GitHub forks](https://img.shields.io/github/forks/Satwikan/2nd-hand-mbm?style=social)
+ ![GitHub Org's stars](https://img.shields.io/github/stars/Satwikan/2nd-hand-mbm?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/Satwikan/2nd-hand-mbm?style=social)
+
+![GitHub issues](https://img.shields.io/github/issues/Satwikan/2nd-hand-MBM?color=blue&style=for-the-badge)
+![GitHub issues](https://img.shields.io/github/issues/Satwikan/2nd-hand-MBM?color=green&style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/Satwikan/2nd-hand-mbm?color=blue&style=for-the-badge)
 
  ## Overview
  Welcome to our project 2nd Hand MBM. The goal of this project is to provide students with all the branch realted books, technical equipments and other study related material. And this is an open source project so feel free to fork and clone this project and try to add few more things in this project. 
