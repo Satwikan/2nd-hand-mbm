@@ -11,6 +11,9 @@
  - Back end Framework -->Express js
  - Authorization and Authentication -->Firebase
  - Database -->Mongo DB, Mongoose
+
+[fork my repository](https://github.com/user/repository/fork)
+
  
 ## Color Scheme for this Project:
 - Dark Blue: #12232E
@@ -24,7 +27,21 @@
 - Shadow of Light Blue: #EEFBFB
 
 ## Contributers 
-- [Tanmay Goyal](https://github.com/tanmay12-sud0)
+<table>
+  <tr>
+    <td align="center"><a href="https://github.com/tanmay12-sud0"><img src="https://avatars.githubusercontent.com/u/74183172?v=4" width="100px;" alt=""/><br /><sub><b>Tanmay Goyal</b></sub></a><br /><a href="#https://github.com/tanmay12-sud0" title="Content">🖋</a> <a href="https://github.com/Satwikan/2nd-hand-mbm/commits/main" title="Documentation">📖</a></td>
+   <td align="center"><a href="https://github.com/Rajat-Jain29"><img src="https://avatars.githubusercontent.com/u/74781798?v=4" width="100px;" alt=""/><br /><sub><b>Rajat Jain</b></sub></a><br /><a href="https://github.com/Rajat-Jain29" title="Content">🖋</a> <a href="https://github.com/Satwikan/2nd-hand-mbm/commits/main" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/RYzen-009"><img src="https://avatars.githubusercontent.com/u/74481466?s=400&u=3ce07bd992f782c43c2474dd99e284f1671f43fe&v=4" width="100px;" alt=""/><br /><sub><b>Tanmay Mathur</b></sub></a><br /><a href="https://github.com/RYzen-009" title="Content">🖋</a> <a href="https://github.com/Satwikan/2nd-hand-mbm/commits/main" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Satwikan"><img src="https://avatars.githubusercontent.com/u/69719072?v=4" width="100px;" alt=""/><br /><sub><b>Satwik Anmol</b></sub></a><br /><a href="https://github.com/Satwikan" title="Content">🖋</a> <a href="https://github.com/Satwikan/2nd-hand-mbm/commits/main" title="Documentation">📖</a></td>
+ </tr>
+</table> 
+
+
+
 - [Rajat Jain](https://github.com/Rajat-Jain29)
 - [Tanmay Mathur](https://github.com/RYzen-009)
 - [Satwik Anmol](https://github.com/Satwikan)
+
+## LICENSE
+[MIT](https://github.com/Satwikan/2nd-hand-mbm/blob/main/LICENSE)
+
