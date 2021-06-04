@@ -2,7 +2,7 @@
  
  
  ## Overview
- Welcome to our project 2nd Hand MBM. The goal of this project is to provide studets with all the branch realted books, technical equipments and other study related material. And this is an open source project so feel free to fork and clone this porject and try to add few more things in this project. 
+ Welcome to our project 2nd Hand MBM. The goal of this project is to provide students with all the branch realted books, technical equipments and other study related material. And this is an open source project so feel free to fork and clone this project and try to add few more things in this project. 
        
  ## Technologies Used
  - Front end -->CSS, Javascript
