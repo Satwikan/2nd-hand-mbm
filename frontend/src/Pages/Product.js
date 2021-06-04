@@ -6,8 +6,6 @@ import { getProductss, getRelated } from "../Function/Prodt";
 import { useParams } from "react-router-dom";
 import SingleProduct from "../Components/cards/SingleProduct";
 import ProductCard from "../Components/cards/ProductCard";
-const CONSTANTS = require("../cssVariables");
-
 const Product = () => {
   const style = { "letter-spacing": "2px", "text-align": "center" };
 

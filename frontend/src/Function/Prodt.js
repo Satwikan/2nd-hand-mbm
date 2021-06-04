@@ -14,7 +14,7 @@ export const getProduct = async (count) =>
   await axios.get(`http://localhost:8000/api//products/:${count}`);
 
   export const getAds = async (count) =>
-  await axios.get(`http://localhost:8000/api/ads`);
+  await axios.get(`http://localhost:8000/api/ads/${count}`);
 
 export const removeProduct = async (slug, authtoken) =>
   await axios.delete(`http://localhost:8000/api//product/${slug}`, {

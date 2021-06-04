@@ -8,7 +8,6 @@ import Home from "./Pages/Home";
 import Login from "./Pages/Auth/Login";
 import Register from "./Pages/Auth/Register";
 import Header from "./Components/Nav/Header";
-import Footer from "./Components/cards/Footer";
 import RegisterComplate from "./Pages/Auth/RegisterComplate";
 import Forgetpassword from "./Pages/Auth/Forgetpasswords";
 import { useDispatch } from "react-redux";
@@ -60,7 +59,6 @@ const App = () => {
   }, []);
 
   const AppStyle = {
-    "background-color": "hsl(201, 66%, 75%)",
     color: CONSTANTS.text,
   };
 
@@ -127,7 +125,6 @@ const App = () => {
           <AllProducts />
         </AdminRoute>
       </Switch>
-      <Footer />
     </div>
   );
 };

@@ -34,7 +34,7 @@ exports.listAll = async (req, res) => {
       .limit(parseInt(req.params.count))
       .populate("category")
       .populate("subs")
-      .sort([["craetedAt", "desc"]])
+      .sort([["createdAt", "desc"]])
       .exec();
 
     res.json(Products);
@@ -72,7 +72,7 @@ exports.removes = async (req, res) => {
     console.log(deleted);
   } catch (err) {
     console.log(err);
-    return res.staus(400).send("Product delete failed");
+    return res.status(400).send("Product delete failed");
   }
 };
 

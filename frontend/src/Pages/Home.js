@@ -1,5 +1,6 @@
 import React from "react";
 import { useState } from "react";
+import Footer from "../Components/cards/Footer";
 import { useSelector } from "react-redux";
 import Jumbotron from "../Components/cards/Jumbotrons";
 import Banner from "../Components/cards/Banner";
@@ -25,15 +26,12 @@ function Home() {
       style={{
         display: "grid",
         "place-items": "center",
-        "background-color": "hsl(201, 66%, 75%)",
       }}
     >
-      <br />
-      <br />
       <Banner />
       <div
         className="jumbotron h1 font-weight-bold text-center"
-        style={{ "background-color": CONSTANTS.lightText }}
+        style={{ "background-color": "#007CC7", width: "100%" }}
       >
         <Jumbotron />
       </div>
@@ -58,6 +56,7 @@ function Home() {
       <SubCategoryList />
       <br />
       <br />
+      <Footer />
     </div>
   );
 }

@@ -40,10 +40,10 @@ function NewArrivals() {
   }, []);
 
   const style = {
-    "background-color": CONSTANTS.shadowText,
     color: CONSTANTS.background,
     "letter-spacing": "4px",
     width: "60vw",
+    "text-align": "center",
   };
 
   return (

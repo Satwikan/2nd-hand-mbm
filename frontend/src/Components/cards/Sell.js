@@ -6,7 +6,7 @@ import axios from "axios";
 import {useDispatch} from 'react-redux';
 import {Link, useHistory} from 'react-router-dom'
 import {useSelector} from 'react-redux'
-
+import Footer from "./Footer";
 
 const Sell = () => {
     const dispatch = useDispatch();
@@ -148,6 +148,8 @@ const Sell = () => {
           Post Now
         </Button>
       </Form>
+      <br/>
+      <Footer/>
     </div>
   );
 };

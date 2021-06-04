@@ -6,7 +6,7 @@ const About = () => {
     <>
       <div
         style={{
-          "letter-spacing": "2px",
+          "letter-spacing": "4px",
           textUnderlineOffset: "true",
         }}
         className="text-center h4 "
@@ -17,24 +17,22 @@ const About = () => {
         <h2>Our Team</h2>
       </div>
       <hr />
+
       <div className="about-container">
-
-
-
         <figure className="snip1515">
           <div className="profile-image">
-            <img height="220px" src="mathurSahab.jpeg" alt="Tanmay Mathur" />
+            <img height="220px" src="jainSahab.jpeg" alt="Rajat Jain" />
           </div>
           <figcaption>
-            <h3>Tanmay Mathur</h3>
-            <h4>Public Relations | Designer</h4>
+            <h3>Rajat Jain</h3>
+            <h4>Founder</h4>
 
-            <p>WEB developer | Open source contributor @ GSSOC'21 | CP. </p>
+            <p>Coding enthusiast | WEB developer</p>
             <div className="icons">
-              <a href="https://www.linkedin.com/in/tanmay-mathur-009/">
+              <a href="https://www.linkedin.com/in/rajat-jain-a9aa341a6/">
                 <i className="ion-social-linkedin"></i>
               </a>
-              <a href="https://github.com/RYzen-009">
+              <a href="https://github.com/Rajat-Jain29">
                 {" "}
                 <i className="ion-social-github"></i>
               </a>
@@ -63,18 +61,18 @@ const About = () => {
         </figure>
         <figure className="snip1515">
           <div className="profile-image">
-            <img height="220px" src="jainSahab.jpeg" alt="Rajat Jain" />
+            <img height="220px" src="mathurSahab.jpeg" alt="Tanmay Mathur" />
           </div>
           <figcaption>
-            <h3>Rajat Jain</h3>
-            <h4>Founder</h4>
+            <h3>Tanmay Mathur</h3>
+            <h4>Public Relations | Designer</h4>
 
-            <p>Coding enthusiast | WEB developer | CC</p>
+            <p>WEB developer | Open source contributor @ GSSOC'21 | CP. </p>
             <div className="icons">
-              <a href="https://www.linkedin.com/in/rajat-jain-a9aa341a6/">
+              <a href="https://www.linkedin.com/in/tanmay-mathur-009/">
                 <i className="ion-social-linkedin"></i>
               </a>
-              <a href="https://github.com/Rajat-Jain29">
+              <a href="https://github.com/RYzen-009">
                 {" "}
                 <i className="ion-social-github"></i>
               </a>
@@ -83,7 +81,7 @@ const About = () => {
         </figure>
         <figure className="snip1515">
           <div className="profile-image">
-            <img height="220px" src="LegendHimself.jpg" alt="Satwik Anmol" />
+            <img height="220px" src="LegendHimself.jpg" alt="sample47" />
           </div>
           <figcaption>
             <h3>Satwik Anmol</h3>
@@ -105,5 +103,4 @@ const About = () => {
     </>
   );
 };
-
 export default About;

@@ -2,10 +2,6 @@
 @import url(https://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css);
 @import url(https://fonts.googleapis.com/css?family=Playfair+Display);
 
-html {
-  background-color: #4da8da;
-}
-
 .about-container {
   display: flex;
   align-items: space-around;

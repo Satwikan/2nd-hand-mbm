@@ -9,7 +9,7 @@
   border-width: .6vw;
   background-color: #4da8da;
   color: #12232e;
-  min-width: 5vw;
+  min-width: 3vw;
   margin-right: 3vw;
   font-size: 3vh;
 }
@@ -22,7 +22,7 @@
   /* right */
 }
 
-img {
+#logo {
   height: 10vh;
   aspect-ratio: default;
 }

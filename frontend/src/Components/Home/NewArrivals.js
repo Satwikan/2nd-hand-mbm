@@ -16,7 +16,7 @@ function NewArrivals() {
 
   const loadProduct = () => {
     setLoading(true);
-    getAds("createdAt", "desc", page)
+    getProducts("createdAt", "desc", page)
       .then((res) => {
         setProduct(res.data);
         setLoading(false);

@@ -58,7 +58,11 @@ function Header() {
       >
         <Menu.Item key="home" style={{ color: "#4DA8DA" }}>
           <Link to="/">
-            <img src="logo.png" alt="2nd-HAND-MBM" />
+            <img
+              src="https://raw.githubusercontent.com/Satwikan/2nd-hand-mbm/main/frontend/public/logo.png"
+              alt="2nd-HAND-MBM"
+              id="logo"
+            />
           </Link>
         </Menu.Item>
 
@@ -75,7 +79,7 @@ function Header() {
           onClick={() => history.push("/Sell")}
           id="sell-button"
         >
-          <i class="fa fa-plus"></i> SELL
+          <i class="fa fa-plus"></i> + SELL
         </button>
 
         {!user && (

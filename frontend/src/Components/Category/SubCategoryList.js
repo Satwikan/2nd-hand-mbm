@@ -7,9 +7,7 @@ import { getsub, getsubs } from "../../Function/Sub";
 
 function SubCategoryList() {
   const style = {
-
     color: "#203647",
-    
   };
   const [sub, setsub] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -24,11 +22,10 @@ function SubCategoryList() {
   console.log(sub);
   const showCategory = () =>
     sub.map((c) => (
-      <div
-        key={c._id}
-        className="btn col btn-lg btn-primary btn-raised m-3 "
-      >
-        <Link to={`/sub/${c.slug}`} style={style} >{c.name}</Link>
+      <div key={c._id} className="btn col btn-lg btn-primary btn-raised m-3 ">
+        <Link to={`/sub/${c.slug}`} style={style}>
+          {c.name}
+        </Link>
       </div>
     ));
 
