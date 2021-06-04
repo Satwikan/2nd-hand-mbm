@@ -10,6 +10,7 @@ import {
 import { Link, useHistory } from "react-router-dom";
 import firebase from "firebase";
 import { useDispatch, useSelector } from "react-redux";
+import logo from "./logo.png";
 
 import { Button } from "antd";
 import "./Header.css";
@@ -56,12 +57,12 @@ function Header() {
       >
         <Menu.Item key="home" style={{ color: "#4DA8DA" }}>
           <Link to="/">
-            <img src="logo.png" alt="2nd-HAND-MBM"/>
+            <img src="logo.png" alt="2nd-HAND-MBM" />
           </Link>
         </Menu.Item>
 
         <button
-          // className="float-right"
+          className="ml-5"
           onClick={() => history.push("/about")}
           id="about-button"
         >
