@@ -1,9 +1,9 @@
 export default {
-  text: "#12232E",
+  text: "hsl(204, 44%, 13%)",
 
   lightText: "#007CC7",
 
-  background: "#4DA8DA",
+  background: "hsl(201, 66%, 58%)",
 
   shadowText: "#203647",
 

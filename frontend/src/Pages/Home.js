@@ -31,7 +31,11 @@ function Home() {
       <Banner />
       <div
         className="jumbotron h1 font-weight-bold text-center"
-        style={{ "background-color": "#007CC7", width: "100%" }}
+        style={{
+          "background-image":
+            "linear-gradient(to top, #dfe9f3 0%, white 100%)",
+          width: "100%",
+        }}
       >
         <Jumbotron />
       </div>
