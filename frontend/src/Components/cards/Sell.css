@@ -1,17 +1,36 @@
 #container {
-    display: grid;
-    place-items: center;
-    font-family:cursive;
-    
-  }
-  
-  #form {
-    max-width: fit-content;
-    color: #203647;
-  }
-  input[type="number"]::-webkit-inner-spin-button,
-  input[type="number"]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-  }
-  
+  display: grid;
+  place-items: center;
+  font-family: cursive;
+}
+
+#form {
+  max-width: fit-content;
+  color: #203647;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* This CSS is to make background image transparent */
+
+#container {
+  height: 100%;
+  width: 100%;
+  display: block;
+  position: relative;
+}
+
+#container::after {
+  content: "";
+  opacity: 0.7;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;   
+  background: url("https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/06/BUILD-GREAT-CORPORATE-DESIGN.jpg?auto=format&q=60&w=1600&h=1000&fit=crop&crop=faces");
+}

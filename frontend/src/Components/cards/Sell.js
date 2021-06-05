@@ -61,11 +61,13 @@ const Sell = () => {
     };
   };
 
+  const imageCss = {}
+
   return (
     <div
       id="container"
       style={{
-        backgroundImage: `url("https://99designs-blog.imgix.net/blog/wp-content/uploads/2018/06/BUILD-GREAT-CORPORATE-DESIGN.jpg?auto=format&q=60&w=1600&h=1000&fit=crop&crop=faces")`,
+        
       }}
     >
       <Form className='container' id="form" onSubmit={onFormSubmit}>

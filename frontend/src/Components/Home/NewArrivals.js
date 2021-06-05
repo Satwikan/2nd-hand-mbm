@@ -6,6 +6,7 @@ import { Pagination } from "antd";
 
 import { getProducts, getProductCount, getAds } from "../../Function/Prodt";
 import ProductCard from "../cards/ProductCard";
+const CONSTANTS = require("../../cssVariables");
 
 function NewArrivals() {
   const [product, setProduct] = useState([]);
@@ -37,10 +38,15 @@ function NewArrivals() {
       setProductCount(res.data);
     });
   }, []);
-
+  const style = {
+    color: CONSTANTS.background,
+    "letter-spacing": "4px",
+    width: "60vw",
+    "text-align": "center",
+  };
   return (
     <>
-      <h4>New Arrivals</h4>
+      <h4 style={style}>New Arrivals</h4>
       <div className="container">
         {loading ? (
           <Skeleton loading={loading} avatar active>
@@ -65,11 +71,13 @@ function NewArrivals() {
 
       <div className="row">
         <nav className="col-md-4 offset-md-4 text-center pt-2 p-3">
-          <Pagination
-            onChange={(value) => setPage(value)}
-            defaultCurrent={page}
-            total={(productCount / 3) * 10}
-          />
+          <div style={{ display: "flex" }}>
+            <Pagination
+              onChange={(value) => setPage(value)}
+              defaultCurrent={page}
+              total={(productCount / 3) * 10}
+            />
+          </div>
         </nav>
       </div>
     </>

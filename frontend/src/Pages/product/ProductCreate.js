@@ -18,6 +18,7 @@ function ProductCreate() {
     category: "",
     subs: [],
     images: [],
+    phone: "",
   };
   const { user } = useSelector((state) => ({ ...state }));
   const [values, setValues] = useState(initial);
@@ -26,7 +27,7 @@ function ProductCreate() {
   const [loading, setLoading] = useState(false);
 
   const { Option } = Select;
-  const { title, description, price, categories, subs } = values;
+  const { title, description, price, categories, subs, phone } = values;
 
   useEffect(() => {
     loadCategories();
@@ -126,6 +127,18 @@ function ProductCreate() {
                 onChange={handleChange}
               />
             </div>
+
+            <div className="form-group">
+              <label>Seller's Phone number</label>
+              <input
+                type="number"
+                name="phone"
+                className="form-control container"
+                value={phone}
+                onChange={handleChange}
+              />
+            </div>
+
             <div className="form-group">
               <label>Category</label>
               <select

@@ -36,16 +36,13 @@ function Header() {
     setcurrent(e.key);
   };
 
-  const headColorLight = { color: "#4DA8DA" };
-  const headColorDark = { color: "MidnightBlue" };
-
   return (
     <div
       style={{
         position: "fixed",
         width: "100%",
         "z-index": "9",
-        color: "#4DA8DA",
+        color: "#fff",
         "align-items": "center",
       }}
       className="main-container"

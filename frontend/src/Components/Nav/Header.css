@@ -1,13 +1,12 @@
 #headBar {
   background-color: #12232e;
-  color: #4da8da;
+  color: #ffffff;
 }
 
 #sell-button {
-  border-color: #f1b24a;
-  border-radius: 20px;
-  border-width: .6vw;
-  background-color: #4da8da;
+  border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
+  border-width: .3vw;
+  background-color: #fff;
   color: #12232e;
   min-width: 3vw;
   margin-right: 3vw;

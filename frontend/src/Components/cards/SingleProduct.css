@@ -1,4 +1,20 @@
-.slider img{
-    height: 500px;
-    object-fit: cover;
+.slider img {
+  height: 500px;
+  object-fit: cover;
 }
+
+#product-info-container {
+  border-image: linear-gradient(45deg, turquoise, greenyellow) 1;
+  border-width: 3px;
+}
+
+#product-info-container h3 {
+  letter-spacing: "3px";
+  text-align: "center";
+  font-family: "'Montserrat', sans-serif";
+}
+
+/* #product-page-image-container {
+  height: 40vh;
+  width: 20vw;
+} */

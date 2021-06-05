@@ -2,13 +2,22 @@ import React from "react";
 import { Card, Avatar } from "antd";
 import { EyeOutlined, ShoppingCartOutlined } from "@ant-design/icons";
 import { Link } from "react-router-dom";
+import "./ProductCard.css"
+
 function ProductCard({ p, loading }) {
   const { Meta } = Card;
   // console.log(p.images[0].url)
   console.log(loading);
   return (
     <Card
-      style={{ width: 300 }}
+      className="full-border"
+      style={{
+        width: 280,
+        "border-image": "linear-gradient(45deg, #4DA8DA, #203647) 1",
+        "border-width": "4px",
+        "box-shadow": "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
+        margin: "5px"
+      }}
       cover={
         <img
           alt="example"

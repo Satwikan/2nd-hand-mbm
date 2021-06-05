@@ -12,13 +12,13 @@ function SingleProduct({ product }) {
   const { Meta } = Card;
   const { TabPane } = Tabs;
   const style = {
-    "letter-spacing": "2px",
+    "letter-spacing": "3px",
     "text-align": "center",
     "font-family": "'Montserrat', sans-serif",
   };
 
   function callback(key) {
-    console.log(key);
+    console.log(product);
   }
 
   return (
@@ -28,7 +28,7 @@ function SingleProduct({ product }) {
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,400&display=swap"
         rel="stylesheet"
       />
-      <div className="col-md-7">
+      <div className="col-md-5 text-center">
         {product.images && product.images.length ? (
           <Carousel autoPlay infiniteLoop showArrows={true}>
             {product.images &&
@@ -50,17 +50,22 @@ function SingleProduct({ product }) {
           <TabPane tab="Description" key="1">
             {product.description}
           </TabPane>
-          <TabPane tab="More" key="2">
-            Call us on Number xxxx-xxxx-xx
+          <TabPane tab="Seller's Info" key="2">
+            {product.phone ? (
+              <div> Contact Seller on {product.phone}</div>
+            ) : (
+              <div>Sorry looks like we don't have seller's info 😓</div>
+            )}
           </TabPane>
         </Tabs>
       </div>
 
       <div className="col-md-5">
-        <h1 style={style} className="bg-info p-3">
+        <h3 style={style} className="bg-info p-3">
           <b>{product.title}</b>
-        </h1>
+        </h3>
         <Card
+          id="product-info-container"
           actions={[
             <>
               <Link to="/">
