@@ -1,24 +1,30 @@
-![logo1](https://user-images.githubusercontent.com/74481466/120747306-7191bf80-c51e-11eb-891d-5c644affcfc5.png)     
- 
- [![GitHub forks](https://img.shields.io/github/forks/Naereen/StrapDown.js.svg?style=social&label=Fork&maxAge=2592000)](https://github.com/Satwikan/2nd-hand-mbm/network/members)
-[![GitHub stars](https://img.shields.io/github/stars/Naereen/StrapDown.js.svg?style=social&label=Star&maxAge=2592000)](https://github.com/Satwikan/2nd-hand-mbm/stargazers)
-[![GitHub followers](https://img.shields.io/github/followers/Naereen.svg?style=social&label=Follow&maxAge=2592000)](https://github.com/Naereen?tab=followers)
-[![GitHub watchers](https://img.shields.io/github/watchers/Naereen/StrapDown.js.svg?style=social&label=Watch&maxAge=2592000)](https://GitHub.com/Naereen/StrapDown.js/watchers/)
+![logo1](https://user-images.githubusercontent.com/74481466/120747306-7191bf80-c51e-11eb-891d-5c644affcfc5.png)
 
- <img src="https://img.shields.io/github/license/tesseractcoding/neoalgo?style=for-the-badge" /></a> <img src="https://img.shields.io/badge/PRs-welcome-brightgreen.svg?style=for-the-badge" alt="PRs Welcome" /> <a href="https://github.com/Satwikan/2nd-hand-mbm/pulls" target="_blank"><img alt="GitHub pull requests" src="https://img.shields.io/github/issues-pr/tesseractcoding/neoalgo?style=for-the-badge" /></a> <a href="https://github.com/Satwikan/2nd-hand-mbm/issues" target="_blank"><img alt="GitHub issues" src="https://img.shields.io/github/issues/tesseractcoding/neoalgo?style=for-the-badge" /></a> 
- 
+ ![GitHub forks](https://img.shields.io/github/forks/Satwikan/2nd-hand-mbm?style=social)
+ ![GitHub Org's stars](https://img.shields.io/github/stars/Satwikan/2nd-hand-mbm?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/Satwikan/2nd-hand-mbm?style=social)
+
+![GitHub issues](https://img.shields.io/github/issues/Satwikan/2nd-hand-MBM?color=green&style=for-the-badge)
+![GitHub closed issues](https://img.shields.io/github/issues-closed/Satwikan/2nd-hand-MBM?color=red&style=for-the-badge)
+![GitHub pull requests](https://img.shields.io/github/issues-pr/Satwikan/2nd-hand-MBM?color=orange&style=for-the-badge)
+![GitHub contributors](https://img.shields.io/github/contributors/Satwikan/2nd-hand-mbm?color=blue&style=for-the-badge)
 
  ## Overview
  Welcome to our project 2nd Hand MBM. The goal of this project is to provide students with all the branch realted books, technical equipments and other study related material. And this is an open source project so feel free to fork and clone this project and try to add few more things in this project. 
        
  ## Technologies Used
  
- - Front end --> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
- - Front end Frame works--> <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"> <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
- - Back end --><img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node-dot-js&logoColor=white">
- - Back end Framework --> <img src ="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white">
- - Authorization and Authentication --> <img src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black">
- - Database --> <img src ="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white">, Mongoose
+ <img src="https://img.shields.io/badge/Frontend-FFA500?style=for-the-badge&logo=Front-end&logoColor=white"> <img src="https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white"> <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black">
+ 
+ <img src="https://img.shields.io/badge/Frontend Framework-94F53B?style=for-the-badge&logo=Front-end-framework&logoColor=white"> <img src="https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white"> <img src="https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB">
+
+ <img src="https://img.shields.io/badge/Backend-53A973?style=for-the-badge&logo=Back-end&logoColor=White"> <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node-dot-js&logoColor=white">
+  
+ <img src="https://img.shields.io/badge/Backend Framework-3C7EDC?style=for-the-badge&logo=Back-end-Framework&logoColor=white">   <img src ="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white">
+ 
+ <img src="https://img.shields.io/badge/Authentication & Authorization-E81629?style=for-the-badge&logo=Authentication-Authorization&logoColor=white">   <img src="https://img.shields.io/badge/firebase-ffca28?style=for-the-badge&logo=firebase&logoColor=black">
+ 
+ <img src="https://img.shields.io/badge/Database-464B4D?style=for-the-badge&logo=Database&logoColor=white"> <img src ="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white"> <img src ="https://img.shields.io/badge/Mongoose-53adcb?style=for-the-badge&logo=mongoose&logoColor=white">
 
 
  
