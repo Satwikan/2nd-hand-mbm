@@ -16,6 +16,7 @@ import Loader from "react-loader-spinner";
 import { useEffect } from 'react';
 
 function Login() {
+    
     const [email, setemail] = useState("");
     const [password, setpassword] = useState("");
     const [loading, setloading] = useState(false);
@@ -110,13 +111,14 @@ function Login() {
 
 
     const LoginForm = () => (
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} >
             <input type="email" 
             value={email}
             placeholder="Your email"
             autoFocus
             onChange={e => setemail(e.target.value)}
-            className="form-control" />
+            className="form-control"
+             />
             <br/>
 
             <input type="password" 
@@ -147,7 +149,7 @@ function Login() {
 
 
     return (
-        <div className="container p-5">
+        <div className="container p-5" >
             <div className="row">
                 <div className="col-md-6 offset-md-3">
                         {

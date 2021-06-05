@@ -4,11 +4,14 @@ const CONSTANTS = require("../../cssVariables").default;
 
 const Jumbotron = () => {
   const JumbotronStyle = {
-    fontWeight: "200",
-    color: CONSTANTS.text,
+    fontWeight: "300",
+     color: CONSTANTS.text,
   };
   return (
-    <div style={JumbotronStyle}>
+    <div style={
+      {JumbotronStyle},{"background-color": "#F3B05A"}
+    
+    }  >
       <Typewriter
         options={{
           strings: [

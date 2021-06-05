@@ -29,15 +29,19 @@ function Home() {
       }}
     >
       <Banner />
+      <br/>
+
       <div
-        className="jumbotron h1 font-weight-bold text-center"
+        className="h1 font-weight-bold text-center"
         style={{
           "background-image":
-            "linear-gradient(to top, #dfe9f3 0%, white 100%)",
+            "linear-gradient(to top, #9AFEFF 0%, 100%)",
           width: "100%",
-        }}
+      
+              }}
       >
         <Jumbotron />
+        <br/>
       </div>
       <NewArrivals />
       <br />
