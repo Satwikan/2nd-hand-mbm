@@ -25,7 +25,7 @@ function Register() {
     e.preventDefault();
     console.log(email);
     const config = {
-      url: "http://localhost:3000/register/complate",
+      url: "https://mbm-backends.herokuapp.com/register/complate",
       handleCodeInApp: true,
     };
     await auth.sendSignInLinkToEmail(email, config);
