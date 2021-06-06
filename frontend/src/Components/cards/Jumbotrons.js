@@ -1,6 +1,6 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-// const CONSTANTS = require("../../cssVariables").default;
+import "./Jumbotrons.css"
 
 const Jumbotron = () => {
   const JumbotronStyle = {
@@ -8,7 +8,7 @@ const Jumbotron = () => {
     //  color: CONSTANTS.text,
   };
   return (
-    <div style={
+    <div id="jumbo" style={
       {"background-color": "#F3B05A","fontFamily":"cursive","fontWeight":"100"}
     
     }  >
