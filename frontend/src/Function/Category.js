@@ -1,11 +1,11 @@
 import axios from 'axios';
 
 export const getCategories = async() => 
-        await axios.get("http://localhost:8000/api/categories")
+        await axios.get("https://mbm-backends.herokuapp.com/api/categories")
 
 
 export const getCategory = async(slug) => 
-        await axios.get(`http://localhost:8000/api/category/${slug}`)
+        await axios.get(`https://mbm-backends.herokuapp.com/api/category/${slug}`)
  
 
  
@@ -16,7 +16,7 @@ export const getCategory = async(slug) =>
 //         })
 
 export const removeCategory = async (slug, authtoken) =>
-  await axios.delete(`http://localhost:8000/api/category/${slug}`, {
+  await axios.delete(`https://mbm-backends.herokuapp.com/api/category/${slug}`, {
     headers: {
       authtoken,
     },
@@ -24,7 +24,7 @@ export const removeCategory = async (slug, authtoken) =>
 
 
 export const updateCategory = async(slug, category, authtoken) => 
-        await axios.put(`http://localhost:8000/api/category/${slug}`, {
+        await axios.put(`https://mbm-backends.herokuapp.com/api/category/${slug}`, {
             headers: authtoken
         },{
             name: category
@@ -41,7 +41,7 @@ export const updateCategory = async(slug, category, authtoken) =>
 // }
 
 export const createCategory = async (category, authtoken) =>
-  await axios.post(`http://localhost:8000/api/category`, category, {
+  await axios.post(`https://mbm-backends.herokuapp.com/api/category`, category, {
     headers: {
       authtoken,
     },
@@ -49,4 +49,4 @@ export const createCategory = async (category, authtoken) =>
 
 
   export const getCategoriesSubs = async(_id) => 
-        await axios.get(`http://localhost:8000/api/category/subs/${_id}`)
+        await axios.get(`https://mbm-backends.herokuapp.com/api/category/subs/${_id}`)
