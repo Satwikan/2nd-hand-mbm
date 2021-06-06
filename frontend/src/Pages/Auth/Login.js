@@ -160,6 +160,7 @@ function Login() {
         <div id="auth-form">
           <div className>
             <img
+            height="400px"
               src="https://image.freepik.com/free-vector/mobile-login-concept-illustration_114360-83.jpg"
               alt="login page"
             />
