@@ -8,6 +8,7 @@ exports.authCheck = async(req, res, next) => {
         const firebasebase = await admin.auth().verifyIdToken(req.headers.authtoken);
         console.log(req.headers.authtoken);
         req.user = firebasebase;
+        console.log(req.user)
    } catch(err){
        console.log(err);
        res.status(401).json({
