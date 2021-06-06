@@ -47,7 +47,7 @@ function NewArrivals() {
   return (
     <>
       <h4 style={style}>New Arrivals</h4>
-      <div className="container">
+      <div className="container ">
         {loading ? (
           <Skeleton loading={loading} avatar active>
             <Meta
@@ -59,25 +59,25 @@ function NewArrivals() {
             />
           </Skeleton>
         ) : (
-          <div className="row">
+          <div className="row ">
             {product.map((p) => (
-              <div key={p._id} className="col-md-4">
+              <div key={p._id} className="col-md-4 mt-3">
                 <ProductCard p={p} loading={loading} />
               </div>
             ))}
           </div>
         )}
       </div>
-
+              <br />
       <div className="row">
-        <nav className="col-md-4 offset-md-4 text-center pt-2 p-3">
-          <div style={{ display: "flex" }}>
+        <nav className='col-md-12  text-center pt-2 p-3 ' >
+        {/* className="col-md-4 offset-md-4 text-center pt-2 p-3" */}
             <Pagination
               onChange={(value) => setPage(value)}
               defaultCurrent={page}
               total={(productCount / 3) * 10}
             />
-          </div>
+     
         </nav>
       </div>
     </>

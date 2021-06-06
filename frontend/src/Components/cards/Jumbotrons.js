@@ -1,15 +1,15 @@
 import React from "react";
 import Typewriter from "typewriter-effect";
-const CONSTANTS = require("../../cssVariables").default;
+// const CONSTANTS = require("../../cssVariables").default;
 
 const Jumbotron = () => {
   const JumbotronStyle = {
-    fontWeight: "300",
-     color: CONSTANTS.text,
+    // fontWeight: "100",
+    //  color: CONSTANTS.text,
   };
   return (
     <div style={
-      {JumbotronStyle},{"background-color": "#F3B05A"}
+      {"background-color": "#F3B05A","fontFamily":"cursive","fontWeight":"100"}
     
     }  >
       <Typewriter

@@ -63,16 +63,11 @@ function Header() {
           </Link>
         </Menu.Item>
 
+        
+        {/* <button  class="btn btn-info">Info</button> */}
         <button
-          className="ml-5"
-          onClick={() => history.push("/about")}
-          id="about-button"
-        >
-          <i class="fa fa-plus"></i> About Us
-        </button>
-
-        <button
-          className="float-right"
+        type="button"
+          className="ml-4 btn btn-info"
           onClick={() => history.push("/Sell")}
           id="sell-button"
         >
@@ -124,6 +119,17 @@ function Header() {
                 <Link to="/admin/dashboard">Dashboard</Link>
               </Menu.Item>
             )}
+
+            <Menu.Item>
+            <button
+          className="ml-5"
+          onClick={() => history.push("/about")}
+          id="about-button"
+        >
+          <i class="fa fa-plus"></i> About Us
+        </button>
+              
+            </Menu.Item>
 
             <Menu.Item
               onClick={logout}

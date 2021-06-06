@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap");
+
+#auth-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#auth-head {
+  text-align: center;
+  letter-spacing: "4px";
+  font-family: "Roboto Condensed", sans-serif;
+}
+
+@media only screen and (max-width: 600px) {
+  #auth-form img {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    opacity: 0.1;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    top: 10px;
+  }
+}

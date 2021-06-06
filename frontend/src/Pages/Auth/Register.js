@@ -6,6 +6,8 @@ import { toast } from "react-toastify";
 import { useHistory } from "react-router";
 import { useEffect } from "react";
 import { useSelector } from "react-redux";
+import "./auth.css";
+
 function Register() {
   const [email, setemail] = useState("");
 
@@ -46,7 +48,7 @@ function Register() {
         className="form-control"
       />
       <br />
-      <button type="submit" className="btn btn-raised">
+      <button type="submit" className="btn btn-primary">
         Register
       </button>
     </form>
@@ -54,10 +56,16 @@ function Register() {
 
   return (
     <div className="container p-5">
-      <div className="row">
-        <div className="col-md-6 offset-md-3">
-          <h4>Register</h4>
-
+      <div>
+        <h2 id="auth-head">Register</h2>
+        <div id="auth-form">
+          <div>
+            <img
+              src="https://image.freepik.com/free-vector/access-control-system-abstract-concept_335657-3180.jpg"
+              alt="register page"
+              style={{ height: "70vh",  width: "70vh" }}
+            />
+          </div>
           {registerForm()}
         </div>
       </div>

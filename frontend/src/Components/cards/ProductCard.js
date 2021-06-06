@@ -12,11 +12,12 @@ function ProductCard({ p, loading }) {
     <Card
       className="full-border"
       style={{
-        width: 280,
-        "border-image": "linear-gradient(45deg, #4DA8DA, #203647) 1",
-        "border-width": "4px",
+        // width: 280,
+        "border-image": "linear-gradient(45deg, #4DA8DA, #203647) 0.5",
+        "border-width": "2px",
         "box-shadow": "rgba(100, 100, 111, 0.2) 0px 7px 29px 0px",
-        margin: "5px"
+        "margin": "2px"
+        
       }}
       cover={
         <img

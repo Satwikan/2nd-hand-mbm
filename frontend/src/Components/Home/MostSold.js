@@ -41,8 +41,8 @@ function NewArrivals() {
 
   const style = {
     color: CONSTANTS.background,
-    "letter-spacing": "4px",
-    width: "60vw",
+    // "letter-spacing": "4px",
+    // width: "60vw",
     "text-align": "center",
   };
 
@@ -63,7 +63,7 @@ function NewArrivals() {
         ) : (
           <div className="row">
             {product.map((p) => (
-              <div key={p._id} className="col-md-4">
+              <div key={p._id} className="col-md-4 mt-3">
                 <ProductCard p={p} loading={loading} />
               </div>
             ))}
