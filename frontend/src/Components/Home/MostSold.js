@@ -44,6 +44,7 @@ function NewArrivals() {
     // "letter-spacing": "4px",
     // width: "60vw",
     "text-align": "center",
+    "border-radius":"20px"
   };
 
   return (
