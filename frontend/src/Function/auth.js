@@ -25,7 +25,7 @@ export const currentuser = async(authtokens) => {
 
 export const currentAdmin = async(authtokens) => {
     return(
-        await axios.post("http://localhost:8000/api/current-admin", {}, {
+        await axios.post("https://mbm-backends.herokuapp.com/api/current-admin", {}, {
             headers: {
                
                 authtoken: authtokens
