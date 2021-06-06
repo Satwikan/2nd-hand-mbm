@@ -92,7 +92,7 @@ function RegisterComplate() {
             onChange={(e) => setpassword(e.target.value)}
             className="form-control" />
             <br/>
-            <button type="submit" className="btn btn-raised">Register complate</button>
+            <button type="submit" className="btn btn-raised">Register complete</button>
         </form>
     )
 
