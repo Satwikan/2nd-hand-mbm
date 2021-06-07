@@ -79,7 +79,7 @@ const App = () => {
         <Route exact path="/register">
           <Register />
         </Route>
-        <Route exact path="/register/complate">
+        <Route  path="/register/complate">
           <RegisterComplate />
         </Route>
         <Route exact path="/forgot/password">
