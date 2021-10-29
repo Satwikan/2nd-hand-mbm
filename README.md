@@ -1,4 +1,4 @@
-![logo1](https://user-images.githubusercontent.com/74481466/120747306-7191bf80-c51e-11eb-891d-5c644affcfc5.png)
+![Logo](https://user-images.githubusercontent.com/64884766/139492962-ec93da23-dec6-4f0a-8d75-c8ca91973f9a.png)
 
  ![GitHub forks](https://img.shields.io/github/forks/Satwikan/2nd-hand-mbm?style=social)
  ![GitHub Org's stars](https://img.shields.io/github/stars/Satwikan/2nd-hand-mbm?style=social)
